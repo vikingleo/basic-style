@@ -1,0 +1,21 @@
+/**
+ * 模块名称：position
+ * 创建时间：2018-1-5 11:07:09
+ * 说明：定位
+ */
+
+ @import '_mixins.config';
+.pos {
+  &-a {
+    position: absolute !important;
+  }
+  &-r {
+    position: relative !important;
+  }
+  &-f {
+    position: fixed !important;
+  }
+  &-static {
+    position: static !important;
+  }
+}

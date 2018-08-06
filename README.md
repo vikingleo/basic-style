@@ -1,3 +1,17 @@
+![npm:versuib](https://img.shields.io/npm/v/basic-style.svg?style=flat)
+![lang:scss](https://img.shields.io/badge/lang-scss-red.svg)
+![license:MIT](https://img.shields.io/npm/l/express.svg)
+
+## 使用
+### Step 1
+```
+npm install basic-style
+```
+### Step 2
+```
+import 'basic-style/scss/basic-style.scss'
+```
+
 ## 概述
 为了方便调用一些常用的样式而写，应用场景如：
 

@@ -1,0 +1,71 @@
+/**
+ * 模块名称：rem转换
+ * 创建时间：2017-12-29 11:26:41
+ * 说明：px转rem的mixin，输入px值即可
+ */
+@import "_global.config";
+
+@mixin gradient($dir, $begin, $end) {
+  background: linear-gradient($dir, $begin, $end);
+  background: -webkit-linear-gradient($dir, $begin, $end);
+  background: -o-linear-gradient($dir, $begin, $end);
+  background: -moz-linear-gradient($dir, $begin, $end);
+}
+
+// 背景颜色
+@mixin bgColors($name, $color) {
+  &-#{$name} {
+    background-color: $color !important;
+    &.btn {
+      @if $color!=white {
+        color: lighten($color, 50%);
+      } @else {
+        color: #000;
+        border: 1px solid #eee;
+      }
+      &:active {
+        color: lighten($color, 10%);
+        background-color: darken($color, 10%) !important;
+      }
+    }
+  }
+}
+
+// 字体颜色
+@mixin textColors($name, $color) {
+  &-#{$name} {
+    color: $color !important;
+  }
+}
+
+// 使用时直接 width:units(50)=50x2rpx，最终结果：100rpx
+@function units($val) {
+  @return $val*$unit;
+}
+
+//边框颜色
+@mixin borderColor($dir) {
+  border: {
+    @if ($dir !=null) {
+      #{$dir}: {
+        width: units(1);
+        style: $border-type;
+        color: $border-color;
+      }
+    } @else {
+      width: units(1);
+      style: $border-type;
+      color: $border-color;
+    }
+  }
+  @each $i in $colorsName {
+    &.border-#{$i} {
+      @if $dir !=null {
+        border-#{$dir}-color: map-get($colorsMap, $i) !important;
+      } @else {
+        border-color: map-get($colorsMap, $i) !important;
+      }
+
+    }
+  }
+}

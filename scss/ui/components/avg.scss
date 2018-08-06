@@ -1,0 +1,44 @@
+/**
+均分网格
+ */
+@import "../../layout/flex";
+
+.avg {
+  overflow: hidden;
+  @extend .d-flex;
+  @extend .align-items-stretch;
+  &.avg-active {
+    .avg-item {
+      &:active {
+        opacity: .6;
+      }
+    }
+  }
+  .avg-item {
+    @extend .d-flex;
+    @extend .flex-col;
+    @extend .justify-content-center;
+  }
+  &.avg-border {
+    .avg-item {
+      border-left: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      margin-left: -1px;
+      margin-bottom: -1px;
+      &:last-child {
+        border-right: 1px solid #eee;
+      }
+    }
+  }
+  @for $i from 1 through 5 {
+    &.avg-#{$i} {
+      flex-wrap: wrap;
+      &.avg-border {
+        margin-right: -#{$i+1}px;
+      }
+      .avg-item {
+        width: (100%/$i);
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+/**
+ * 模块名称：display
+ * 创建时间：2018-1-5 11:10:07
+ * 说明：块模式
+ */
+
+.d {
+  &-block {
+    display: block;
+  }
+  &-inline-block {
+    display: inline-block;
+  }
+  &-inline {
+    display: inline;
+  }
+  &-none {
+    display: none;
+  }
+  &-flex {
+    display: flex;
+  }
+}

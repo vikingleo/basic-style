@@ -1,0 +1,10 @@
+/**
+字体颜色
+ */
+@import '../basic/_mixins.config';
+
+.text {
+  @each $i in $colorsName {
+    @include textColors($i, map-get($colorsMap, $i));
+  }
+}

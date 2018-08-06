@@ -1,0 +1,28 @@
+/**
+ * 模块名称：overflow
+ * 创建时间：2018-1-5 11:21:52
+ * 说明：滚动模式
+ */
+
+ @import '_mixins.config';
+.overflow {
+  &-hidden{
+    overflow: hidden !important;
+  }
+  &-y {
+    &-hidden {
+      overflow-y: hidden !important;
+    }
+    &-auto {
+      overflow-y: auto !important;
+    }
+  }
+  &-x {
+    &-hidden {
+      overflow-x: hidden !important;
+    }
+    &-auto {
+      overflow-x: auto !important;
+    }
+  }
+}

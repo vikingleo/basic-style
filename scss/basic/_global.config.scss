@@ -1,0 +1,48 @@
+//模块名称：全局配置
+//创建时间：2017-12-29 11:03:11
+//说明：全局配置
+@import '_color.config';
+//声明用微信样式红还是普通网页的初始化
+$init-config: wechat;
+// UI给图是1倍图，1pt=1px，根据iphone6(@2)计算，实际像素为2倍
+// 小程序用2，普通web根据实际情况设置
+$unit: 2rpx;
+// 字体大小初始值
+$font-size-default: 10;
+$font-size-begin: 0;
+$font-size-end: 15;
+//  border
+$border-type: solid;
+$border-color: #eee;
+// padding
+$padding-begin: 0;
+$padding-end: 5;
+// margin
+$margin-begin: 0;
+$margin-end: 5;
+// flex数值
+$flex-begin: 1;
+$flex-end: 10;
+// main配置
+$main-min-height: 100vh;
+$main-fixed-height: 100vh;
+$main-body-flex: 1;
+// 按钮
+$btn-padding-top: 8*$unit;
+$btn-padding-bottom: $btn-padding-top;
+$btn-padding-right: $btn-padding-top;
+$btn-padding-left: $btn-padding-top;
+$btn-border-radius: 5*$unit;
+$btn-line-height: 1.2;
+$btn-color: $grey;
+$btn-color-active: darken($color: $grey, $amount: 20%);
+// 链接
+$btn-link-border-radius: 0;
+$btn-link-padding-top: 0;
+$btn-link-padding-bottom: $btn-link-padding-top;
+$btn-link-padding-right: $btn-link-padding-top;
+$btn-link-padding-left: $btn-link-padding-top;
+$btn-link-bg-color: transparent;
+$btn-link-color: $primary;
+$btn-link-color-active: darken($color: $primary, $amount: 20%);
+$btn-link-bg-color: transparent !important;

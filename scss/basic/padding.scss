@@ -1,0 +1,35 @@
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2017-3-13 11:32:17
+    描述：内边距公共样式
+*/
+
+@import '_mixins.config';
+
+@for $i from $padding-begin through $padding-end {
+  .p {
+    &-#{$i} {
+      padding: units($i*10) !important;
+    }
+    &x-#{$i} {
+      padding-left: units($i*10) !important;
+      padding-right: units($i*10) !important;
+    }
+    &y-#{$i} {
+      padding-top: units($i*10) !important;
+      padding-bottom: units($i*10) !important;
+    }
+    &t-#{$i} {
+      padding-top: units($i*10) !important;
+    }
+    &r-#{$i} {
+      padding-right: units($i*10) !important;
+    }
+    &b-#{$i} {
+      padding-bottom: units($i*10) !important;
+    }
+    &l-#{$i} {
+      padding-left: units($i*10) !important;
+    }
+  }
+}

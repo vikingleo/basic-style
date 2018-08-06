@@ -1,0 +1,46 @@
+/**
+ * 模块名称：各模块整合
+ * 创建时间：
+ * 说明：
+ */
+
+/* 标记 */
+
+@import './ui/components/avg';
+@import './ui/components/badge';
+@import './ui/components/checkbox';
+@import './ui/components/navbar';
+/* 自定义控件 */
+
+@import './ui/control/input';
+@import './ui/control/btn';
+
+/* 基础 */
+
+@import './basic/init';
+@import './basic/border';
+@import './basic/clearfix';
+@import './basic/display';
+@import './basic/tag-size';
+@import './basic/margin';
+@import './basic/padding';
+@import './basic/overflow';
+@import './basic/position';
+/* 文本和背景颜色 */
+
+//渐变色
+@import './color/gradient';
+//背景颜色
+@import './color/bg-colors';
+//文本颜色
+@import './color/text-colors';
+/* 文本 */
+
+@import './text/text-align.scss';
+@import './text/text-size.scss';
+@import './text/font-weight.scss';
+@import './text/text-overflow.scss';
+@import './text/text-type.scss';
+/* 布局 */
+
+@import './layout/flex';

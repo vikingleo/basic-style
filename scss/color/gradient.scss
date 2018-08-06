@@ -1,0 +1,137 @@
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2017-2-24 15:41:22
+    描述：背景颜色渐变
+*/
+@import '../basic/_mixins.config';
+
+@each $i in $colorsName {
+  .bg-gradient {
+    [class*=bg-gradient-] {
+      border: 0;
+      color: #fff;
+    }
+    @if $i != black {
+      &-#{$i} {
+        @include gradient(to right, lighten(map-get($colorsMap, $i), 20%), map-get($colorsMap, $i));
+        &.btn {
+          color: lighten(map-get($colorsMap, $i), 50%);
+          &:active {
+            @include gradient(to right, lighten(map-get($colorsMap, $i), 10%), darken(map-get($colorsMap, $i), 20%));
+            color: lighten(map-get($colorsMap, $i), 40%);
+          }
+        }
+      }
+    } @else {
+      &-#{$i} {
+        @include gradient(to right, lighten(map-get($colorsMap, $i), 50%), map-get($colorsMap, $i));
+        &.btn {
+          color: lighten(map-get($colorsMap, $i), 50%);
+          &:active {
+            @include gradient(to right, black, darken(map-get($colorsMap, $i), 20%));
+            color: lighten(map-get($colorsMap, $i), 40%);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+.btn {
+  [class*=gradient-] {
+    border: 0;
+    color: #fff;
+  }
+  &-primary {
+    &:active {
+      @include gradient(to right, $primary, $primary+ #333);
+    }
+  }
+  &-secondary {
+    &:active {
+      @include gradient(to right, $secondary, $secondary+ #333);
+    }
+  }
+  &-third {
+    &:active {
+      @include gradient(to right, $third, $third+ #333);
+    }
+  }
+  &-red {
+    &:active {
+      @include gradient(to right, $red, $red+ #333);
+    }
+  }
+  &-blue {
+    &:active {
+      @include gradient(to right, $blue, $blue+ #333);
+    }
+  }
+  &-green {
+    &:active {
+      @include gradient(to right, $green, $green+ #333);
+    }
+  }
+  &-pink {
+    &:active {
+      @include gradient(to right, $pink, $pink+ #333);
+    }
+  }
+  &-purple {
+    &:active {
+      @include gradient(to right, $purple, $purple+ #333);
+    }
+  }
+  &-brown {
+    &:active {
+      @include gradient(to right, $brown, $brown+ #333);
+    }
+  }
+  &-orange {
+    &:active {
+      @include gradient(to right, $orange, $orange+ #333);
+    }
+  }
+  &-yellow {
+    &:active {
+      @include gradient(to right, $yellow, $yellow+ #333);
+    }
+  }
+}
+
+.gradient {
+  &-primary {
+    @include gradient(to right, $primary + #555, $primary);
+  }
+  &-secondary {
+    @include gradient(to right, $secondary + #555, $secondary);
+  }
+  &-third {
+    @include gradient(to right, $third + #555, $third);
+  }
+  &-red {
+    @include gradient(to right, $red + #555, $red);
+  }
+  &-blue {
+    @include gradient(to right, $blue + #555, $blue);
+  }
+  &-green {
+    @include gradient(to right, $green + #555, $green);
+  }
+  &-pink {
+    @include gradient(to right, $pink + #555, $pink);
+  }
+  &-purple {
+    @include gradient(to right, $purple + #555, $purple);
+  }
+  &-brown {
+    @include gradient(to right, $brown + #555, $brown);
+  }
+  &-orange {
+    @include gradient(to right, $orange + #555, $orange);
+  }
+  &-yellow {
+    @include gradient(to right, $yellow + #555, $yellow);
+  }
+}*/

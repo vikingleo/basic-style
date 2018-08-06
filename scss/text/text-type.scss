@@ -1,0 +1,22 @@
+/**
+ * 模块名称：文本样式
+ * 创建时间：2018-5-15 16:14:21
+ * 说明：文本的样式，例如阴影
+ */
+
+@import '../basic/_mixins.config';
+.text-shadow {
+    text-shadow: 1px 1px 2px #000;
+    &-light {
+        text-shadow: 1px 1px 2px #888;
+    }
+}
+
+// 文字下划线
+.text {
+    &-decoration {
+        &-underline {
+            text-decoration: underline;
+        }
+    }
+}

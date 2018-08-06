@@ -1,0 +1,10 @@
+/**
+背景颜色
+ */
+@import '../basic/_mixins.config';
+
+.bg {
+  @each $i in $colorsName {
+    @include bgColors($i, map-get($colorsMap, $i));
+  }
+}

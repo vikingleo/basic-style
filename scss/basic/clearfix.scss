@@ -1,0 +1,17 @@
+/**
+ * 模块名称：clearfix
+ * 创建时间：2018-1-5 11:11:02
+ * 说明：清除浮动
+ */
+
+.clearfix {
+  zoom: 1;
+  &:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    content: '';
+  }
+}

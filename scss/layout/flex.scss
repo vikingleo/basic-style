@@ -1,0 +1,92 @@
+@import '../basic/_mixins.config';
+.flex {
+  &-col {
+    flex-direction: column;
+  }
+  &-wrap {
+    flex-wrap: wrap;
+    &-reverse {
+      flex-wrap: wrap-reverse;
+    }
+  }
+  @for $i from $flex-begin through $flex-end {
+    &-#{$i} {
+      flex: $i;
+    }
+  }
+}
+
+.align {
+  &-self {
+    &-center {
+      align-self: center;
+    }
+    &-start {
+      align-self: flex-start;
+    }
+    &-end {
+      align-self: flex-end;
+    }
+    &-baseline {
+      align-self: baseline;
+    }
+    &-stretch {
+      align-self: stretch;
+    }
+  }
+  &-items {
+    &-center {
+      align-items: center;
+    }
+    &-start {
+      align-items: flex-start;
+    }
+    &-end {
+      align-items: flex-end;
+    }
+    &-baseline {
+      align-items: baseline;
+    }
+    &-stretch {
+      align-items: stretch;
+    }
+  }
+  &-content {
+    &-center {
+      align-content: center;
+    }
+    &-start {
+      align-content: flex-start;
+    }
+    &-end {
+      align-content: flex-end;
+    }
+    &-stretch {
+      align-content: stretch;
+    }
+    &-between {
+      align-content: space-between;
+    }
+    &-around {
+      align-content: space-around;
+    }
+  }
+}
+
+.justify-content {
+  &-center {
+    justify-content: center;
+  }
+  &-start {
+    justify-content: flex-start;
+  }
+  &-end {
+    justify-content: flex-end;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+  &-around {
+    justify-content: space-around;
+  }
+}

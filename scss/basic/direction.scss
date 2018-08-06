@@ -1,0 +1,26 @@
+// 方向，top，right，bopttom，left
+.top {
+  //左上角
+  &-left {
+    left: 0;
+    top: 0;
+  }
+  //右上角
+  &-right {
+    right: 0;
+    top: 0;
+  }
+  //  左下角
+  //  左上角
+}
+
+.bottom {
+  &-left {
+    bottom: 0;
+    left: 0;
+  }
+  &-right {
+    right: 0;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,57 @@
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2017-3-13 11:31:53
+    描述：外边距公共样式
+*/
+@import '_mixins.config';
+
+@for $i from $margin-begin through $margin-end {
+  .m {
+    &-#{$i} {
+      margin: units($i*10) !important;
+      &-reverse {
+        margin: units(-$i*10) !important;
+      }
+    }
+    &x-#{$i} {
+      margin-left: units($i*10) !important;
+      margin-right: units($i*10) !important;
+      &-reverse {
+        margin-left: units(-$i*10) !important;
+        margin-right: units(-$i*10) !important;
+      }
+    }
+    &y-#{$i} {
+      margin-top: units($i*10) !important;
+      margin-bottom: units($i*10) !important;
+      &-reverse {
+        margin-top: units(-$i*10) !important;
+        margin-bottom: units(-$i*10) !important;
+      }
+    }
+    &t-#{$i} {
+      margin-top: units($i*10) !important;
+      &-reverse {
+        margin-top: units(-$i*10) !important;
+      }
+    }
+    &r-#{$i} {
+      margin-right: units($i*10) !important;
+      &-reverse {
+        margin-right: units(-$i*10) !important;
+      }
+    }
+    &b-#{$i} {
+      margin-bottom: units($i*10) !important;
+      &-reverse {
+        margin-bottom: units(-$i*10) !important;
+      }
+    }
+    &l-#{$i} {
+      margin-left: units($i*10) !important;
+      &-reverse {
+        margin-left: units(-$i*10) !important;
+      }
+    }
+  }
+}
