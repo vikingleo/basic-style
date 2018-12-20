@@ -26,9 +26,21 @@
   }
   &-height {
     height: 100% !important;
+    &-max {
+      max-height: 100% !important;
+    }
+    &min {
+      min-height: 100% !important;
+    }
   }
   &-width {
     width: 100% !important;
+    &-max {
+      max-width: 100% !important;
+    }
+    &-min {
+      min-width: 100% !important;
+    }
   }
 }
 

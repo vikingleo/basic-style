@@ -17,30 +17,26 @@
   }
 } @else {
   // 普通网页样式的初始化
+
   html,
-  body,
-  div,
-  section,
-  nav,
-  header,
-  footer,
-  ul,
-  ol,
-  li,
-  dl,
-  dt,
-  dd,
-  img,
-  input,
-  textarea,
-  button,
-  a,
-  aside,
-  main {
+  body {
+    height: 100%;
+  }
+  * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-overflow-scrolling: touch;
   }
+
+  p{
+    line-height: 1.5;
+    margin: 0;
+    +p{
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+  }
+
 }

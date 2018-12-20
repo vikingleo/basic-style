@@ -16,8 +16,11 @@
         @include gradient(to right, lighten(map-get($colorsMap, $i), 20%), map-get($colorsMap, $i));
         &.btn {
           color: lighten(map-get($colorsMap, $i), 50%);
+          &:hover{
+            @include gradient(to right, map-get($colorsMap, $i), darken(map-get($colorsMap, $i), 5%));
+          }
           &:active {
-            @include gradient(to right, lighten(map-get($colorsMap, $i), 10%), darken(map-get($colorsMap, $i), 20%));
+            @include gradient(to right, darken(map-get($colorsMap, $i), 3%), darken(map-get($colorsMap, $i), 5%));
             color: lighten(map-get($colorsMap, $i), 40%);
           }
         }

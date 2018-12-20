@@ -314,19 +314,19 @@ $lightWhite: rgba(255, 255, 255, 0.54);
 
 /* 颜色，主颜色 */
 
-$primary: #ffc000;
+$primary: #F5406A;
 $primary-lighten: lighten($primary, 20%);
 $primary-darken: darken($primary, 10%);
-$secondary: #f26c69;
+$secondary: #21D5AC;
 $secondary-lighten: lighten($secondary, 10%);
 $secondary-darken: darken($secondary, 10%);
-$third: #6b4215;
+$third: #08352B;
 $third-lighten: lighten($third, 10%);
 $third-darken: darken($third, 10%);
 
 /* 公共颜色 */
 
-$base: $third;
+$base: #333;
 $base-lighten: lighten($base,10%);
 $base-darken: darken($base, 10%);
 

@@ -14,7 +14,8 @@
 
 @import './ui/control/input';
 @import './ui/control/btn';
-
+/* 图标 */
+@import './icon/iconfont';
 /* 基础 */
 
 @import './basic/init';
@@ -44,3 +45,4 @@
 /* 布局 */
 
 @import './layout/flex';
+@import './layout/float';

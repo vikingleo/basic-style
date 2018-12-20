@@ -4,18 +4,63 @@
  * 说明：定位
  */
 
- @import '_mixins.config';
+@import '_mixins.config';
+
 .pos {
   &-a {
     position: absolute !important;
   }
+
   &-r {
     position: relative !important;
   }
+
   &-f {
     position: fixed !important;
   }
+
   &-static {
     position: static !important;
+  }
+}
+
+.top {
+  &-0 {
+    top: 0;
+  }
+
+  &-left {
+    &-0 {
+      @extend .top-0;
+      left: 0;
+    }
+  }
+
+  &-right {
+    &-0 {
+      right: 0;
+      @extend .top-0;
+    }
+  }
+
+}
+
+.bottom {
+  &-0 {
+    bottom: 0;
+  }
+
+  &-left {
+    &-0 {
+      @extend .bottom-0;
+      left: 0;
+    }
+  }
+
+  &-right {
+    &-0 {
+      right: 0;
+      @extend .bottom-0;
+    }
   }
 }

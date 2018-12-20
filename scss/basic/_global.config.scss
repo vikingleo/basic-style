@@ -3,10 +3,10 @@
 //说明：全局配置
 @import '_color.config';
 //声明用微信样式红还是普通网页的初始化
-$init-config: wechat;
+$init-config: web;
 // UI给图是1倍图，1pt=1px，根据iphone6(@2)计算，实际像素为2倍
 // 小程序用2，普通web根据实际情况设置
-$unit: 2rpx;
+$unit: 1px;
 // 字体大小初始值
 $font-size-default: 10;
 $font-size-begin: 0;
