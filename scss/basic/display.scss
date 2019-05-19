@@ -6,18 +6,18 @@
 
 .d {
   &-block {
-    display: block;
+    display: block !important;
   }
   &-inline-block {
-    display: inline-block;
+    display: inline-block!important;
   }
   &-inline {
-    display: inline;
+    display: inline!important;
   }
   &-none {
-    display: none;
+    display: none!important;
   }
   &-flex {
-    display: flex;
+    display: flex!important;
   }
 }

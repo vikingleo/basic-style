@@ -7,7 +7,7 @@
 尺寸：
 在“vk-checkbox”中追加class：size-md 或 size-lg
  */
-@import '../../basic/inputConfig';
+@import '../../basic/mixins.config';
 
 .vk-checkbox {
   font-size: units(12);
