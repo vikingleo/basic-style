@@ -1,4 +1,3 @@
-![npm:versuib](https://img.shields.io/npm/v/basic-style.svg?style=flat)
 ![lang:scss](https://img.shields.io/badge/lang-scss-red.svg)
 ![license:MIT](https://img.shields.io/npm/l/express.svg)
 
