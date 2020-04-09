@@ -312,24 +312,29 @@ $fullWhite: rgba(255, 255, 255, 1);
 $darkWhite: rgba(255, 255, 255, 0.87);
 $lightWhite: rgba(255, 255, 255, 0.54);
 
-/* 颜色，主颜色 */
-
-$primary: #F5416B;
+//主要颜色
+$default: #262626;
+$default-darken: darken($default, 10%);
+$default-lighten: lighten($default, 10%);
+$primary: $orange900;
 $primary-lighten: lighten($primary, 20%);
 $primary-darken: darken($primary, 10%);
-$secondary: #567086;
-$secondary-lighten: lighten($secondary, 10%);
-$secondary-darken: darken($secondary, 10%);
-$third: #4e657a;
-$third-lighten: lighten($third, 10%);
-$third-darken: #435c70;
+$danger: $orange900;
+$danger-darken: darken($danger, 10%);
+$danger-lighten: lighten($danger, 10%);
+$prompt: #dcdcdc;
+$prompt-darken: darken($prompt, 10%);
+$prompt-lighten: lighten($prompt, 10%);
+$warning: $orange50;
+$warning-darken: darken($warning, 10%);
+$warning-lighten: lighten($warning, 10%);
 
-/* 公共颜色 */
+// 客户指定色
+$topping: rgb(240, 173, 30);
+$contact: rgb(246, 132, 254);
+$category: rgb(47, 212, 196);
 
-$base: #333;
-$base-lighten: lighten($base, 10%);
-$base-darken: darken($base, 10%);
-
+/*颜色名*/
 $colorsName: red50,
 red100,
 red200,
@@ -613,18 +618,25 @@ faintBlack,
 fullWhite,
 darkWhite,
 lightWhite,
+transparent,
 primary,
 primary-lighten,
 primary-darken,
-secondary,
-secondary-lighten,
-secondary-darken,
-third,
-third-lighten,
-third-darken,
-base,
-base-lighten,
-base-darken;
+default,
+default-darken,
+default-lighten,
+danger,
+danger-darken,
+danger-lighten,
+prompt,
+prompt-darken,
+prompt-lighten,
+warning,
+warning-darken,
+warning-lighten,
+topping,
+contact,
+category;
 
 $colorsMap: (
         red50:$red50,
@@ -910,16 +922,23 @@ $colorsMap: (
         fullWhite:$fullWhite,
         darkWhite:$darkWhite,
         lightWhite:$lightWhite,
+        transparent:$transparent,
         primary:$primary,
         primary-lighten:$primary-lighten,
         primary-darken:$primary-darken,
-        secondary:$secondary,
-        secondary-lighten:$secondary-lighten,
-        secondary-darken:$secondary-darken,
-        third:$third,
-        third-lighten:$third-lighten,
-        third-darken:$third-darken,
-        base:$base,
-        base-lighten:$base-lighten,
-        base-darken:$base-darken
+        default:$default,
+        default-darken:$default-darken,
+        default-lighten:$default-lighten,
+        danger:$danger,
+        danger-darken:$danger,
+        danger-lighten:$danger,
+        prompt:$prompt,
+        prompt-darken:$prompt,
+        prompt-lighten:$prompt,
+        warning:$warning,
+        warning-darken:$warning,
+        warning-lighten:$warning,
+        topping:$topping,
+        contact:$contact,
+        category:$category
 );

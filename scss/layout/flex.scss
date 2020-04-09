@@ -1,7 +1,11 @@
 @import '../basic/_mixins.config';
+
 .flex {
   &-col {
     flex-direction: column;
+  }
+  &-row {
+    flex-direction: row;
   }
   &-wrap {
     flex-wrap: wrap;
@@ -36,57 +40,57 @@
   }
   &-items {
     &-center {
-      align-items: center;
+      align-items: center !important;
     }
     &-start {
-      align-items: flex-start;
+      align-items: flex-start !important;
     }
     &-end {
-      align-items: flex-end;
+      align-items: flex-end !important;
     }
     &-baseline {
-      align-items: baseline;
+      align-items: baseline !important;
     }
     &-stretch {
-      align-items: stretch;
+      align-items: stretch !important;
     }
   }
   &-content {
     &-center {
-      align-content: center;
+      align-content: center !important;
     }
     &-start {
-      align-content: flex-start;
+      align-content: flex-start !important;
     }
     &-end {
-      align-content: flex-end;
+      align-content: flex-end !important;
     }
     &-stretch {
-      align-content: stretch;
+      align-content: stretch !important;
     }
     &-between {
-      align-content: space-between;
+      align-content: space-between !important;
     }
     &-around {
-      align-content: space-around;
+      align-content: space-around !important;
     }
   }
 }
 
 .justify-content {
   &-center {
-    justify-content: center;
+    justify-content: center !important;
   }
   &-start {
-    justify-content: flex-start;
+    justify-content: flex-start !important;
   }
   &-end {
-    justify-content: flex-end;
+    justify-content: flex-end !important;
   }
   &-between {
-    justify-content: space-between;
+    justify-content: space-between !important;
   }
   &-around {
-    justify-content: space-around;
+    justify-content: space-around !important;
   }
 }

@@ -1,0 +1,73 @@
+@import "../../basic/mixins.config";
+
+$border-bottom-color: #ddd;
+
+.cell {
+  height: units(40);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: units(14);
+  border: 0;
+  border-radius: 0;
+  &::after{
+    display: none;
+  }
+
+  &.border {
+    border-bottom: 1px solid $border-bottom-color;
+  }
+
+  &.is-link {
+    &:active {
+      background-color: #f2f2f2;
+    }
+  }
+
+  &.required {
+    .cell-label {
+      &::after {
+        content: '*';
+        display: inline-block;
+        color: #f00;
+      }
+    }
+  }
+
+  &-label {
+    padding-left: units(10);
+    padding-right: units(10);
+    display: flex;
+    align-items: center;
+  }
+
+  .label-before {
+    width: units(30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-content {
+    flex: 1;
+  }
+
+  &-control {
+    padding-right: units(10);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .control-arrow-right {
+    width: units(16);
+    height: units(16);
+    background: {
+      image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAS1BMVEUAAADc3Nza2trb29vd3d3b29vi4uLb29vg4ODb29va2trd3d3b29vb29vb29vb29va2tre3t7c3Nzb29vb29vb29vb29vb29vb29tQBMnqAAAAGHRSTlMAc9yaFWsZ4CHo6yai75Mq5R6MfEbAXSuaTUtnAAAArElEQVRo3u3Wyw6CMBBG4YEi3qpSQO37P6mGkEy6NGEmsZyz/DdfumlGaLNSL+bFnCcxrsnfRrEtZgdlzh5K46ncixEFBQVlSyUUIwoKSvXKAQUF5VclFiMKCspelJeYNi1IK5Z1rfFfqcYt6WRmPHTCwMCo07h4GFedMCo3eg/jiIEh/2ycPYyTThgYGGvJwxgw9mas99VgacjoYEhYjCSmvfUdhs3P0AnV2QceOzapl2i0+wAAAABJRU5ErkJggg==");
+      size: contain;
+      position: center;
+      repeat: no-repeat;
+    }
+  }
+}
+

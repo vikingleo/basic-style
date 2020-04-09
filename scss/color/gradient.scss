@@ -53,12 +53,12 @@
   }
   &-secondary {
     &:active {
-      @include gradient(to right, $secondary, $secondary+ #333);
+      @include gradient(to right, $danger, $danger+ #333);
     }
   }
   &-third {
     &:active {
-      @include gradient(to right, $third, $third+ #333);
+      @include gradient(to right, $prompt, $prompt+ #333);
     }
   }
   &-red {
@@ -108,10 +108,10 @@
     @include gradient(to right, $primary + #555, $primary);
   }
   &-secondary {
-    @include gradient(to right, $secondary + #555, $secondary);
+    @include gradient(to right, $danger + #555, $danger);
   }
   &-third {
-    @include gradient(to right, $third + #555, $third);
+    @include gradient(to right, $prompt + #555, $prompt);
   }
   &-red {
     @include gradient(to right, $red + #555, $red);

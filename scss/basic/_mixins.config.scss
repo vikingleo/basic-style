@@ -7,21 +7,19 @@
 
 @mixin gradient($dir, $begin, $end) {
   background: linear-gradient($dir, $begin, $end);
-  background: -webkit-linear-gradient($dir, $begin, $end);
-  background: -o-linear-gradient($dir, $begin, $end);
-  background: -moz-linear-gradient($dir, $begin, $end);
 }
 
 // 背景颜色
 @mixin bgColors($name, $color) {
   &-#{$name} {
     background-color: $color !important;
+
     &.btn {
+      border-color: $color;
       @if $color!=white {
-        color: #ffffff;
-        text-shadow: 0 0 1px rgba(#000, 0.5);
+        color: #fff;
       } @else {
-        color: #000;
+        color: $default;
         border: 1px solid #eee;
       }
       @if $init-config == web {
@@ -29,6 +27,7 @@
           background-color: lighten($color, 10%) !important;
         }
       }
+
       &:active {
         color: #ffffff;
         background-color: darken($color, 10%) !important;
@@ -41,16 +40,6 @@
 @mixin textColors($name, $color) {
   &-#{$name} {
     color: $color !important;
-    &.btn {
-      &:hover {
-        color: darken($color, 10%) !important;
-      }
-      &-link{
-        &:hover{
-          text-decoration: underline;
-        }
-      }
-    }
   }
 }
 

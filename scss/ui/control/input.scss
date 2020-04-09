@@ -7,17 +7,13 @@
     align-items: center;
     padding-top: 13*$unit;
     padding-bottom: 13*$unit;
-    background-color: #fff;
     &-label {
       color: #888;
       font-size: 14*$unit;
-      line-height: 1;
     }
     &-input {
       flex: 1;
       color: #2a2a2a;
-      border: 0;
-      padding: 0 units(10);
     }
   }
   &-group {
@@ -27,7 +23,7 @@
     .input {
       &-item {
         border: 0;
-        + .input-item {
+        +.input-item {
           border-top: 1px solid #f8f8f8;
         }
       }

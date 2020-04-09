@@ -5,52 +5,73 @@
 */
 @import '_mixins.config';
 
+$unit-interval: 5;
 @for $i from $margin-begin through $margin-end {
   .m {
-    &-#{$i} {
-      margin: units($i*10) !important;
+    &-#{$i*5} {
+      margin: units($i*$unit-interval) !important;
+
       &-reverse {
-        margin: units(-$i*10) !important;
+        margin: units(-$i*$unit-interval) !important;
       }
     }
-    &x-#{$i} {
-      margin-left: units($i*10) !important;
-      margin-right: units($i*10) !important;
-      &-reverse {
-        margin-left: units(-$i*10) !important;
-        margin-right: units(-$i*10) !important;
+
+    &x-center {
+      margin: {
+        left: auto;
+        right: auto;
       }
     }
-    &y-#{$i} {
-      margin-top: units($i*10) !important;
-      margin-bottom: units($i*10) !important;
+
+    &x-#{$i*5} {
+      margin-left: units($i*$unit-interval) !important;
+      margin-right: units($i*$unit-interval) !important;
+
       &-reverse {
-        margin-top: units(-$i*10) !important;
-        margin-bottom: units(-$i*10) !important;
+        margin-left: units(-$i*$unit-interval) !important;
+        margin-right: units(-$i*$unit-interval) !important;
       }
     }
-    &t-#{$i} {
-      margin-top: units($i*10) !important;
+
+    &y-#{$i*5} {
+      margin-top: units($i*$unit-interval) !important;
+      margin-bottom: units($i*$unit-interval) !important;
+
       &-reverse {
-        margin-top: units(-$i*10) !important;
+        margin-top: units(-$i*$unit-interval) !important;
+        margin-bottom: units(-$i*$unit-interval) !important;
       }
     }
-    &r-#{$i} {
-      margin-right: units($i*10) !important;
+
+    &t-#{$i*5} {
+      margin-top: units($i*$unit-interval) !important;
+
       &-reverse {
-        margin-right: units(-$i*10) !important;
+        margin-top: units(-$i*$unit-interval) !important;
       }
     }
-    &b-#{$i} {
-      margin-bottom: units($i*10) !important;
+
+    &r-#{$i*5} {
+      margin-right: units($i*$unit-interval) !important;
+
       &-reverse {
-        margin-bottom: units(-$i*10) !important;
+        margin-right: units(-$i*$unit-interval) !important;
       }
     }
-    &l-#{$i} {
-      margin-left: units($i*10) !important;
+
+    &b-#{$i*5} {
+      margin-bottom: units($i*$unit-interval) !important;
+
       &-reverse {
-        margin-left: units(-$i*10) !important;
+        margin-bottom: units(-$i*$unit-interval) !important;
+      }
+    }
+
+    &l-#{$i*5} {
+      margin-left: units($i*$unit-interval) !important;
+
+      &-reverse {
+        margin-left: units(-$i*$unit-interval) !important;
       }
     }
   }

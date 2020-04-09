@@ -10,10 +10,13 @@
   image,
   button,
   input,
-  textarea {
+  textarea,
+  cover-image,
+  cover-view{
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-overflow-scrolling: touch;
+    //font-size: $body-font;
   }
 } @else {
   // 普通网页样式的初始化
@@ -28,24 +31,15 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-overflow-scrolling: touch;
-    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-    &:focus{
-      outline: none;
-    }
   }
-  //
-  //p {
-  //  line-height: 1.5;
-  //  margin: 10px 0;
-  //}
-  ul, ol {
-    li {
-      list-style-type: none;
+
+  p {
+    line-height: 1.5;
+    margin: 0;
+    + p {
+      margin-top: 10px;
+      margin-bottom: 0;
     }
-  }
-  a {
-    text-decoration: none;
-    transition: all .2s;
   }
 
 }
