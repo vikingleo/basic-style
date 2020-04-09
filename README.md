@@ -4,13 +4,27 @@
 
 ## 使用
 ### Step 1
-```
-npm install basic-style
-```
+
+下载scss文件，放入的项目中
+
 ### Step 2
+web：
 ```
-import 'basic-style/scss/basic-style.scss'
+    // vuejs, main.js or uni-app, main.js
+    import 'path/_basic-style.scss'
 ```
+
+小程序：
+
+    1. 创建app.scss
+    
+    2. @import "path/_basic-style.scss";
+
+uni-app公共变量：
+
+    1. 根目录创建uni.scss
+    
+    2. 在`uni.scss`引入`import "path/basic/_mixins.config.scss`
 
 ## 概述
 为了方便调用一些常用的样式而写，应用场景如：
@@ -35,40 +49,52 @@ flex实现移动端中`文本`和`图标` `居中对齐`并 `两端对齐`，需
 
 ### 先看目录
 ```
-├─basic-style.scss      //集成文件
-├─ui                    //存放一些通用UI
-| ├─control             //比如按钮、文本框，单个表单组件这些都是算一个控件
-| |    ├─btn.scss       //按钮
-| |    └input.scss      //文本框
-| ├─components          //组件，多个控件、控件定制
-| |     ├─badge.scss    //徽章
-| |     └navbar.scss    //导航
-├─text                  //文字处理
-|  ├─font-weight.scss   //文字加粗
-|  ├─text-align.scss    //文字排版，左中右
-|  ├─text-overflow.scss //文字超出显示省略号
-|  ├─text-size.scss     //文字大小
-|  └text-type.scss      //
-├─layout                //布局类
-|   ├─flex.scss         //flex盒模型布局
-|   ├─float.scss        //浮动类
-|   └layout.scss        //全局布局类，可快速解决一些特定的布局
-├─color                 //颜色处理
-|   ├─bg-colors.scss    //背景颜色
-|   ├─gradient.scss     //渐变背景颜色
-|   └text-colors.scss   //文字颜色
-├─basic                 //基础文件，存放一些比较基础的样式，例如初始化等此类不可过分定制但又经常需要的东西
-|   ├─border.scss       //边框，默认就是1px的灰色边框
-|   ├─clearfix.scss     //清除浮动
-|   ├─display.scss      //块的模式，常用就那三个flex,block,inline-block
-|   ├─init.scss         // 标签初始化
-|   ├─margin.scss       // 外边距
-|   ├─overflow.scss     //超出内容框的处理
-|   ├─padding.scss      //内边距
-|   ├─position.scss     //绝对定位
-|   ├─tag-size.scss     //标签大小，经常用来设置头像大小等
-|   ├─_color.config.scss    //颜色配置，包含颜色变量、颜色map等
-|   ├─_global.config.scss   //全局配置，包含各个部件的变量设置
-|   ├─_inputConfig.scss     //配置传入，用于
-|   └_mixins.config.scss    //mixin方法
+├── _basic-style.scss   导入文件，全局集成
+├── animation           动画
+│   └── _spinner.scss   转动样式
+├── basic               基础
+│   ├── _border.scss    边框
+│   ├── _clearfix.scss  清除浮动
+│   ├── _color.config.scss  颜色配置
+│   ├── _direction.scss     position定位top,right,bottom,left
+│   ├── _display.scss       display设置
+│   ├── _global.config.scss 全局变量值控制
+│   ├── _init.scss          浏览器初始化
+│   ├── _margin.scss        外边距
+│   ├── _mixins.config.scss 公共方法
+│   ├── _overflow.scss      盒子截断方式
+│   ├── _padding.scss       内边距
+│   ├── _position.scss      定位方式
+│   └── _tag-size.scss      标签宽度
+├── color                   颜色配置
+│   ├── _bg-colors.scss     背景颜色，和_color.config.scss一致
+│   ├── _gradient.scss      渐变背景颜色
+│   └── _text-colors.scss   文本颜色
+├── components              组件
+│   ├── _avg.scss           平分
+│   ├── _badge.scss         徽章
+│   ├── _btn.scss           按钮
+│   ├── _cell.scss          条目（待定）
+│   ├── _image.scss         图片
+│   ├── _input-group.scss   输入框组
+│   ├── _step.scss          步骤条
+│   └── _table.scss         表格
+├── icon                    图标
+│   ├── _iconfont.scss      iconfont图标
+│   ├── iconfont.eot
+│   ├── iconfont.js
+│   ├── iconfont.json
+│   ├── iconfont.svg
+│   ├── iconfont.ttf
+│   ├── iconfont.woff
+│   └── iconfont.woff2
+├── layout                  布局相关
+│   ├── _flex.scss          弹性盒布局
+│   └── _float.scss         浮动方向
+└── text
+    ├── _font-weight.scss   文本粗细
+    ├── _text-align.scss    文本对齐方式
+    ├── _text-overflow.scss 文本截断方式
+    ├── _text-size.scss     文本字号
+    └── _text-type.scss     文本现实类型
 ```
