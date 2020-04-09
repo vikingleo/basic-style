@@ -1,0 +1,39 @@
+// UI
+@import './components/input-group';
+@import './components/btn';
+@import './components/image';
+@import './components/badge';
+@import './components/table';
+@import './components/cell';
+@import './components/avg';
+@import './components/step';
+//图标
+@import "icon/iconfont";
+@import "animation/spinner";
+/* 基础 */
+@import './basic/init';
+@import './basic/border';
+@import './basic/clearfix';
+@import './basic/display';
+@import './basic/tag-size';
+@import './basic/margin';
+@import './basic/padding';
+@import './basic/overflow';
+@import './basic/position';
+// 文本和背景颜色
+// 渐变色
+@import './color/gradient';
+//背景颜色
+@import './color/bg-colors';
+// 文本颜色
+@import './color/text-colors';
+// 文本
+@import './text/text-align.scss';
+@import './text/text-size.scss';
+@import './text/font-weight.scss';
+@import './text/text-overflow.scss';
+@import './text/text-type.scss';
+//  布局
+@import './layout/flex';
+@import './layout/float';
+

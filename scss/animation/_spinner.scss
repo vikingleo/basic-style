@@ -1,0 +1,31 @@
+@keyframes translateCycle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-cycle {
+  animation: {
+    name: translateCycle;
+    duration: 1s;
+    timing-function: cubic-bezier(.5, 0.25, .25, .5);
+    iteration-count: infinite;
+    fill-mode: forwards;
+  };
+
+}
+
+.spinner {
+  &-cycle {
+    @extend .animate-cycle;
+  }
+
+  &-reverse {
+    animation: {
+      direction: alternate;
+    };
+  }
+}

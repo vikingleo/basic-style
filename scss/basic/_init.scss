@@ -1,0 +1,69 @@
+// 初始化
+//PC或ipad下，使用固定的大小
+@import '_mixins.config';
+
+@if ($init-config == wechat) {
+  // 微信的标签初始化
+  view,
+  scroll-view,
+  input,
+  textarea,
+  cover-image,
+  swiper,
+  swiper-item,
+  image,
+  button,
+  navigator,
+  text,
+  form,
+  picker,
+  i {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-overflow-scrolling: touch;
+    vertical-align: middle;
+  }
+  page {
+    color: $body-font-color;
+    font-size: $body-font;
+  }
+  * {
+    box-sizing: border-box;
+    font-family: PingFang SC, serif;
+  }
+} @else {
+  // 普通网页样式的初始化
+
+  html,
+  body {
+    height: 100%;
+    color: $body-font-color;
+    font-size: $body-font;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-overflow-scrolling: touch;
+    font-family: PingFang SC, serif;
+  }
+  img {
+    max-width: 100%;
+  }
+  p {
+    line-height: 1.5;
+    margin: 0;
+
+    + p {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+  }
+  ul, ol {
+    li {
+      list-style: none;
+    }
+  }
+
+}

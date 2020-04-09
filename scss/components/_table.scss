@@ -1,0 +1,10 @@
+@import "../basic/mixins.config";
+
+.v-table {
+  border-spacing: 0;
+  
+  td {
+    padding: 0;
+    border: 0;
+  }
+}

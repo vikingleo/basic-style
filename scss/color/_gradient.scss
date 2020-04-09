@@ -1,0 +1,140 @@
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2017-2-24 15:41:22
+    描述：背景颜色渐变
+*/
+@import '../basic/_mixins.config';
+
+@each $i in $colorsName {
+  .bg-gradient {
+    [class*=bg-gradient-] {
+      border: 0;
+      color: #fff;
+    }
+    @if $i != black {
+      &-#{$i} {
+        @include gradient($gradient-deg, lighten(map-get($colorsMap, $i), 20%), map-get($colorsMap, $i));
+        &.btn {
+          color: lighten(map-get($colorsMap, $i), 50%);
+          &:hover{
+            @include gradient($gradient-deg, map-get($colorsMap, $i), darken(map-get($colorsMap, $i), 5%));
+          }
+          &:active {
+            @include gradient($gradient-deg, darken(map-get($colorsMap, $i), 3%), darken(map-get($colorsMap, $i), 5%));
+            color: lighten(map-get($colorsMap, $i), 40%);
+          }
+        }
+      }
+    } @else {
+      &-#{$i} {
+        @include gradient($gradient-deg, lighten(map-get($colorsMap, $i), 50%), map-get($colorsMap, $i));
+        &.btn {
+          color: lighten(map-get($colorsMap, $i), 50%);
+          &:active {
+            @include gradient($gradient-deg, black, darken(map-get($colorsMap, $i), 20%));
+            color: lighten(map-get($colorsMap, $i), 40%);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+.btn {
+  [class*=gradient-] {
+    border: 0;
+    color: #fff;
+  }
+  &-primary {
+    &:active {
+      @include gradient($gradient-deg, $primary, $primary+ #333);
+    }
+  }
+  &-secondary {
+    &:active {
+      @include gradient($gradient-deg, $danger, $danger+ #333);
+    }
+  }
+  &-third {
+    &:active {
+      @include gradient($gradient-deg, $prompt, $prompt+ #333);
+    }
+  }
+  &-red {
+    &:active {
+      @include gradient($gradient-deg, $red, $red+ #333);
+    }
+  }
+  &-blue {
+    &:active {
+      @include gradient($gradient-deg, $blue, $blue+ #333);
+    }
+  }
+  &-green {
+    &:active {
+      @include gradient($gradient-deg, $green, $green+ #333);
+    }
+  }
+  &-pink {
+    &:active {
+      @include gradient($gradient-deg, $pink, $pink+ #333);
+    }
+  }
+  &-purple {
+    &:active {
+      @include gradient($gradient-deg, $purple, $purple+ #333);
+    }
+  }
+  &-brown {
+    &:active {
+      @include gradient($gradient-deg, $brown, $brown+ #333);
+    }
+  }
+  &-orange {
+    &:active {
+      @include gradient($gradient-deg, $orange, $orange+ #333);
+    }
+  }
+  &-yellow {
+    &:active {
+      @include gradient($gradient-deg, $yellow, $yellow+ #333);
+    }
+  }
+}
+
+.gradient {
+  &-primary {
+    @include gradient($gradient-deg, $primary + #555, $primary);
+  }
+  &-secondary {
+    @include gradient($gradient-deg, $danger + #555, $danger);
+  }
+  &-third {
+    @include gradient($gradient-deg, $prompt + #555, $prompt);
+  }
+  &-red {
+    @include gradient($gradient-deg, $red + #555, $red);
+  }
+  &-blue {
+    @include gradient($gradient-deg, $blue + #555, $blue);
+  }
+  &-green {
+    @include gradient($gradient-deg, $green + #555, $green);
+  }
+  &-pink {
+    @include gradient($gradient-deg, $pink + #555, $pink);
+  }
+  &-purple {
+    @include gradient($gradient-deg, $purple + #555, $purple);
+  }
+  &-brown {
+    @include gradient($gradient-deg, $brown + #555, $brown);
+  }
+  &-orange {
+    @include gradient($gradient-deg, $orange + #555, $orange);
+  }
+  &-yellow {
+    @include gradient($gradient-deg, $yellow + #555, $yellow);
+  }
+}*/

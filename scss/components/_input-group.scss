@@ -1,0 +1,120 @@
+@import "../basic/mixins.config";
+
+$input-size-default: units(40);
+$input-size-sm: units(30);
+
+.ju {
+  &-input-group {
+    position: relative;
+
+    &::after, &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $border-color;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &-cube {
+      &::before, &::after {
+        display: none;
+      }
+
+      .ju {
+        &-input {
+          &-item {
+            background-color: $grey100;
+
+            + .ju-input-item {
+              margin-top: units(10);
+            }
+          }
+
+          &-label {
+            //background-color: rgba($blueGrey, .1);
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    .ju-input-item {
+      + .ju-input-item {
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: units(10);
+          right: units(10);
+          height: 1px;
+          background-color: $border-color;
+        }
+      }
+    }
+  }
+
+  &-input-item {
+
+    display: flex;
+    align-items: center;
+    height: $input-size-default;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    .btn {
+      padding: {
+        top: $btn-padding-top/2;
+        bottom: $btn-padding-bottom/2;
+      };
+    }
+  }
+
+  &-input-control {
+    padding: 0 units(10);
+  }
+
+  &-input-label {
+    color: $default;
+    min-width: units(40);
+    white-space: nowrap;
+    height: 100%;
+    padding: 0 units(10);
+    margin-right: units(-10);
+    display: flex;
+    font-size: units(14);
+    align-items: center;
+  }
+
+  &-input-content {
+    flex: 1;
+    height: 100%;
+
+    input {
+      font-size: units(14);
+      height: 100%;
+      width: 100%;
+      border: 0;
+      padding: {
+        left: units(10);
+        right: units(10);
+      };
+
+      &::placeholder {
+        color: $grey300;
+      }
+    }
+  }
+}

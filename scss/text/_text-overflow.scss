@@ -1,0 +1,23 @@
+/**
+ * 模块名称：文本方向
+ * 创建时间：2017-12-29 11:09:01
+ * 说明：居中，靠左靠右等等
+ */
+@import '../basic/_mixins.config';
+
+.text {
+  &-overflow {
+    display: block;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+
+    &-lines {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+}

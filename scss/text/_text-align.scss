@@ -1,0 +1,31 @@
+/**
+ * 模块名称：文本对齐
+ * 创建时间：2018-1-22 16:38:26
+ * 说明：文本对齐方式
+ */
+@import '../basic/_mixins.config';
+
+.text {
+  &-center {
+    text-align: center !important;
+  }
+
+  &-left {
+    text-align: left !important;
+  }
+
+  &-right {
+    text-align: right !important;
+  }
+
+  &-justify {
+    text-align: justify !important;
+  }
+
+  // 换行
+  &-space {
+    &-nowrap {
+      white-space: nowrap !important;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+@import "../basic/mixins.config";
+
+$steps-line-unactive: $grey300;
+$step-point-size: 20;
+.ju-steps {
+  display: flex;
+  &.steps-vertical {
+    display: block;
+    width: 100%;
+
+    &.vertical-md {
+      .step-item {
+        min-height: units(100);
+      }
+    }
+
+    &.vertical-lg {
+      .step-item {
+        min-height: units(150);
+      }
+    }
+
+    .step-item {
+      display: flex;
+      align-items: start;
+      min-height: units(50);
+
+      &::before {
+        width: units(5);
+        height: 100%;
+        left: units($step-point-size/2-2.5) !important;
+      }
+
+      &:last-child {
+        &::before {
+          display: none;
+        }
+      }
+
+      .step-content {
+        padding: units(5) units(10);
+        flex: 1;
+        width: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  .step-item {
+    position: relative;
+    flex: 2;
+
+    .step-num {
+      position: relative;
+      z-index: 1;
+    }
+
+    &.active {
+      color: $primary;
+
+      &::before {
+        background-color: $primary;
+      }
+
+      .step-num {
+        color: #fff;
+        background-color: $primary;
+      }
+    }
+
+    &.done {
+      color: $primary;
+
+      &::before {
+        background-color: $primary;
+      }
+
+      .step-num {
+        color: #fff;
+        background-color: $primary;
+        font-family: "ys-icon" !important;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        &::before {
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          background-color: $primary;
+          border-radius: 100%;
+          content: "\e72e";
+        }
+      }
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      background-color: $steps-line-unactive;
+      height: units($step-point-size/5);
+      width: 100%;
+      position: absolute;
+      top: units(($step-point-size/2 )- ($step-point-size/5/2));
+
+    }
+
+    &:first-child {
+      flex: 1;
+
+      &::before {
+        left: 0;
+      }
+    }
+
+    + .step-item {
+      text-align: center;
+    }
+
+    &:last-child {
+      flex: 1;
+      text-align: right;
+
+      &::before {
+        right: 0;
+      }
+    }
+  }
+
+  .step-num {
+    width: units($step-point-size);
+    height: units($step-point-size);
+    background-color: $steps-line-unactive;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    line-height: units($step-point-size);
+  }
+}

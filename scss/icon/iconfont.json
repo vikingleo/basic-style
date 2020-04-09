@@ -1,0 +1,933 @@
+{
+  "id": "1629300",
+  "name": "云税车租宝",
+  "font_family": "ys-icon",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5748523",
+      "name": "实名认证 默认",
+      "font_class": "authentication",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "13527678",
+      "name": "银行卡",
+      "font_class": "bank-card",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "3689533",
+      "name": "身份证正面",
+      "font_class": "idcard-front",
+      "unicode": "e971",
+      "unicode_decimal": 59761
+    },
+    {
+      "icon_id": "12668545",
+      "name": "身份证反面",
+      "font_class": "idcard-back",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "7806599",
+      "name": "loading",
+      "font_class": "loading-line",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "145710",
+      "name": "加星收藏_填充",
+      "font_class": "star-fill",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "145713",
+      "name": "礼品_填充",
+      "font_class": "gift-fill",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "145715",
+      "name": "钱_填充",
+      "font_class": "yen-circle-fill",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "145717",
+      "name": "群组_填充",
+      "font_class": "user-group-fill",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "145719",
+      "name": "删除_填充",
+      "font_class": "trash-fill",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "145720",
+      "name": "设置_填充",
+      "font_class": "cog-fill",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "145722",
+      "name": "时钟_填充",
+      "font_class": "clock-fill",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "145725",
+      "name": "首页_填充",
+      "font_class": "home-fill",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "145727",
+      "name": "搜索_填充",
+      "font_class": "search",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "145728",
+      "name": "提醒_填充",
+      "font_class": "notice-fill",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "145729",
+      "name": "添加_填充",
+      "font_class": "plus-circle-fill",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "145730",
+      "name": "添加用户_填充",
+      "font_class": "user-add-fill",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "145733",
+      "name": "通讯录_填充",
+      "font_class": "address-book-fill",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "145742",
+      "name": "用户_填充",
+      "font_class": "user-man-fill",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "145744",
+      "name": "赞_填充",
+      "font_class": "approval",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "145745",
+      "name": "正确提示_填充",
+      "font_class": "success-circle-fill",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "145747",
+      "name": "座机_填充",
+      "font_class": "telephone-fill",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "145751",
+      "name": "wifi_填充",
+      "font_class": "wifi-circle-fill",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "146069",
+      "name": "清单_填充",
+      "font_class": "list-fill",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "147460",
+      "name": "图片_填充",
+      "font_class": "picture-fill",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "147461",
+      "name": "声音_填充",
+      "font_class": "voice-fill",
+      "unicode": "e6b3",
+      "unicode_decimal": 59059
+    },
+    {
+      "icon_id": "151386",
+      "name": "手机",
+      "font_class": "mobile-phone",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "151387",
+      "name": "优惠券_文字",
+      "font_class": "coupon",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "182088",
+      "name": "商家",
+      "font_class": "store",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "251913",
+      "name": "选择框_默认",
+      "font_class": "ring",
+      "unicode": "e6c1",
+      "unicode_decimal": 59073
+    },
+    {
+      "icon_id": "253557",
+      "name": "充流量_填充",
+      "font_class": "exchange-fill",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
+      "icon_id": "253558",
+      "name": "充流量",
+      "font_class": "exchange",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
+      "icon_id": "253559",
+      "name": "手机_填充",
+      "font_class": "mobile-phone-fill",
+      "unicode": "e6c4",
+      "unicode_decimal": 59076
+    },
+    {
+      "icon_id": "253561",
+      "name": "手机充值_填充",
+      "font_class": "mobile-yen-fill",
+      "unicode": "e6c5",
+      "unicode_decimal": 59077
+    },
+    {
+      "icon_id": "253567",
+      "name": "手机",
+      "font_class": "iphone",
+      "unicode": "e6c7",
+      "unicode_decimal": 59079
+    },
+    {
+      "icon_id": "253572",
+      "name": "手机充值",
+      "font_class": "mobile-phone-yen",
+      "unicode": "e6c8",
+      "unicode_decimal": 59080
+    },
+    {
+      "icon_id": "278742",
+      "name": "输入_填充",
+      "font_class": "pen-fill",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
+      "icon_id": "278743",
+      "name": "输入",
+      "font_class": "pen",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "278745",
+      "name": "一般提示",
+      "font_class": "warning",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "297675",
+      "name": "查话费_填充",
+      "font_class": "search-phone-fill",
+      "unicode": "e6d1",
+      "unicode_decimal": 59089
+    },
+    {
+      "icon_id": "297676",
+      "name": "发送信息_填充",
+      "font_class": "send-email-fill",
+      "unicode": "e6d2",
+      "unicode_decimal": 59090
+    },
+    {
+      "icon_id": "297677",
+      "name": "发送信息",
+      "font_class": "send-email",
+      "unicode": "e6d3",
+      "unicode_decimal": 59091
+    },
+    {
+      "icon_id": "297678",
+      "name": "文本编辑_填充",
+      "font_class": "edit-list-fill",
+      "unicode": "e6d4",
+      "unicode_decimal": 59092
+    },
+    {
+      "icon_id": "297679",
+      "name": "文本编辑",
+      "font_class": "edit-list",
+      "unicode": "e6d5",
+      "unicode_decimal": 59093
+    },
+    {
+      "icon_id": "297680",
+      "name": "查话费",
+      "font_class": "search-phone",
+      "unicode": "e6d6",
+      "unicode_decimal": 59094
+    },
+    {
+      "icon_id": "1232390",
+      "name": "电脑",
+      "font_class": "computer",
+      "unicode": "e720",
+      "unicode_decimal": 59168
+    },
+    {
+      "icon_id": "1356727",
+      "name": "绑定",
+      "font_class": "binding",
+      "unicode": "e75b",
+      "unicode_decimal": 59227
+    },
+    {
+      "icon_id": "1356779",
+      "name": "解除绑定",
+      "font_class": "unbinding",
+      "unicode": "e75d",
+      "unicode_decimal": 59229
+    },
+    {
+      "icon_id": "1615642",
+      "name": "账单",
+      "font_class": "bill",
+      "unicode": "e763",
+      "unicode_decimal": 59235
+    },
+    {
+      "icon_id": "1664367",
+      "name": "上箭头",
+      "font_class": "arrow-up",
+      "unicode": "e767",
+      "unicode_decimal": 59239
+    },
+    {
+      "icon_id": "1664368",
+      "name": "下箭头",
+      "font_class": "arrow-down",
+      "unicode": "e768",
+      "unicode_decimal": 59240
+    },
+    {
+      "icon_id": "1664369",
+      "name": "右箭头",
+      "font_class": "arrow-right",
+      "unicode": "e769",
+      "unicode_decimal": 59241
+    },
+    {
+      "icon_id": "1664371",
+      "name": "左箭头",
+      "font_class": "arrow-left",
+      "unicode": "e76b",
+      "unicode_decimal": 59243
+    },
+    {
+      "icon_id": "1934666",
+      "name": "置顶",
+      "font_class": "top",
+      "unicode": "e771",
+      "unicode_decimal": 59249
+    },
+    {
+      "icon_id": "144706",
+      "name": "密码",
+      "font_class": "lock",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "145431",
+      "name": "群组",
+      "font_class": "user-group",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "145432",
+      "name": "删除",
+      "font_class": "trash",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "145433",
+      "name": "设置",
+      "font_class": "cog",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "145434",
+      "name": "声音",
+      "font_class": "voice",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "145435",
+      "name": "时钟",
+      "font_class": "clock",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "145436",
+      "name": "首页",
+      "font_class": "home-line",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "145438",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "145439",
+      "name": "添加用户",
+      "font_class": "user-add-line",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "145440",
+      "name": "通讯录",
+      "font_class": "address-book",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "145442",
+      "name": "用户",
+      "font_class": "user-man",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "145443",
+      "name": "赞",
+      "font_class": "approval1",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "145449",
+      "name": "对话信息",
+      "font_class": "message",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "145454",
+      "name": "图片",
+      "font_class": "picture",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "145456",
+      "name": "信封",
+      "font_class": "envelope",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "145461",
+      "name": "座机",
+      "font_class": "telephone",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "145464",
+      "name": "wifi",
+      "font_class": "wifi",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "145465",
+      "name": "安全",
+      "font_class": "security",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "145467",
+      "name": "不开心",
+      "font_class": "face-sad",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "145469",
+      "name": "地标",
+      "font_class": "location-mark",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "145471",
+      "name": "分类or广场or其他",
+      "font_class": "category",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "145472",
+      "name": "分享",
+      "font_class": "share",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "145473",
+      "name": "加星收藏",
+      "font_class": "star",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "145474",
+      "name": "禁止提示",
+      "font_class": "minus-circle",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "145475",
+      "name": "开心",
+      "font_class": "face-happy",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "145476",
+      "name": "礼物",
+      "font_class": "gift",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "145477",
+      "name": "钱",
+      "font_class": "yen-circle",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "145478",
+      "name": "清单",
+      "font_class": "list",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "145479",
+      "name": "添加",
+      "font_class": "plus-circle",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "145482",
+      "name": "正确提示",
+      "font_class": "success-circle",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "145484",
+      "name": "标签",
+      "font_class": "tag",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "145485",
+      "name": "充值",
+      "font_class": "yen-translate",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "145486",
+      "name": "对勾",
+      "font_class": "check",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "145487",
+      "name": "兑换",
+      "font_class": "translate",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "145488",
+      "name": "二维码",
+      "font_class": "qr-code",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "145489",
+      "name": "更多",
+      "font_class": "more",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "145490",
+      "name": "关闭",
+      "font_class": "close",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "145493",
+      "name": "扫一扫",
+      "font_class": "scan-qr",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "145494",
+      "name": "上传",
+      "font_class": "shangchuan",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "145495",
+      "name": "刷新",
+      "font_class": "refresh",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "145497",
+      "name": "下载",
+      "font_class": "download-1",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "145502",
+      "name": "错误提示",
+      "font_class": "fail-circle",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "145691",
+      "name": "安全_填充",
+      "font_class": "security-fill",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "145692",
+      "name": "帮助_填充",
+      "font_class": "help-circle-fill",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "145693",
+      "name": "不开心_填充",
+      "font_class": "face-sad-fill",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "145696",
+      "name": "错误提示_填充",
+      "font_class": "fail-circle-fill",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "145699",
+      "name": "电话_填充",
+      "font_class": "call",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "145701",
+      "name": "对话信息_填充",
+      "font_class": "message-fill",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "145704",
+      "name": "分类or广场or其他_填充",
+      "font_class": "category-fill",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "145705",
+      "name": "分享_填充",
+      "font_class": "share-fill",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "145706",
+      "name": "更多_填充",
+      "font_class": "more-fill",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "13386797",
+      "name": "_下",
+      "font_class": "triangle-down",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "13416675",
+      "name": "向下",
+      "font_class": "triangle-up",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "8128319",
+      "name": "保证",
+      "font_class": "insurance",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "7172163",
+      "name": "收益",
+      "font_class": "chart-up",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "6435749",
+      "name": "空",
+      "font_class": "empty-box",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "13271011",
+      "name": "收益",
+      "font_class": "income",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "12560154",
+      "name": "首 页",
+      "font_class": "home",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "1969481",
+      "name": "日历",
+      "font_class": "calendar",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "5121522",
+      "name": "位置",
+      "font_class": "location-chassis",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "11743698",
+      "name": "位置",
+      "font_class": "location",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "122415",
+      "name": "帮助",
+      "font_class": "help",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1614439",
+      "name": "导出",
+      "font_class": "export",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "1029205",
+      "name": "下载",
+      "font_class": "download",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "4320333",
+      "name": "打印",
+      "font_class": "print",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "1903805",
+      "name": "web__暂无记录",
+      "font_class": "empty",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "5771102",
+      "name": "签到",
+      "font_class": "sign",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "478795",
+      "name": "洗车",
+      "font_class": "wash-car",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "10691045",
+      "name": "我的",
+      "font_class": "user-happy",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "11759959",
+      "name": "出租车",
+      "font_class": "tixi",
+      "unicode": "e7be",
+      "unicode_decimal": 59326
+    },
+    {
+      "icon_id": "1166010",
+      "name": "车辆估价",
+      "font_class": "car-appraisal",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "1177123",
+      "name": "车辆估价（车商工具）",
+      "font_class": "car-appraisal-fill",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "2237877",
+      "name": "车辆-01",
+      "font_class": "car",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "2237878",
+      "name": "车辆管理-01",
+      "font_class": "car-ready",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "10017506",
+      "name": "车辆查询",
+      "font_class": "car-search",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "10458084",
+      "name": "车辆已办",
+      "font_class": "car-check",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "12967837",
+      "name": "车辆待办",
+      "font_class": "car-edit",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "10458092",
+      "name": "车辆申请",
+      "font_class": "car-info",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    }
+  ]
+}

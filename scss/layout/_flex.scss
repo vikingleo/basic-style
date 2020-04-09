@@ -1,0 +1,96 @@
+@import '../basic/_mixins.config';
+
+.flex {
+  &-col {
+    flex-direction: column !important;
+  }
+  &-row {
+    flex-direction: row !important;
+  }
+  &-wrap {
+    flex-wrap: wrap !important;
+    &-reverse {
+      flex-wrap: wrap-reverse !important;
+    }
+  }
+  @for $i from $flex-begin through $flex-end {
+    &-#{$i} {
+      flex: $i;
+    }
+  }
+}
+
+.align {
+  &-self {
+    &-center {
+      align-self: center;
+    }
+    &-start {
+      align-self: flex-start;
+    }
+    &-end {
+      align-self: flex-end;
+    }
+    &-baseline {
+      align-self: baseline;
+    }
+    &-stretch {
+      align-self: stretch;
+    }
+  }
+  &-items {
+    &-center {
+      align-items: center !important;
+    }
+    &-start {
+      align-items: flex-start !important;
+    }
+    &-end {
+      align-items: flex-end !important;
+    }
+    &-baseline {
+      align-items: baseline !important;
+    }
+    &-stretch {
+      align-items: stretch !important;
+    }
+  }
+  &-content {
+    &-center {
+      align-content: center !important;
+    }
+    &-start {
+      align-content: flex-start !important;
+    }
+    &-end {
+      align-content: flex-end !important;
+    }
+    &-stretch {
+      align-content: stretch !important;
+    }
+    &-between {
+      align-content: space-between !important;
+    }
+    &-around {
+      align-content: space-around !important;
+    }
+  }
+}
+
+.justify-content {
+  &-center {
+    justify-content: center !important;
+  }
+  &-start {
+    justify-content: flex-start !important;
+  }
+  &-end {
+    justify-content: flex-end !important;
+  }
+  &-between {
+    justify-content: space-between !important;
+  }
+  &-around {
+    justify-content: space-around !important;
+  }
+}

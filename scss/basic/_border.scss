@@ -1,0 +1,90 @@
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2017-3-13 11:32:27
+    描述：边框公共样式
+*/
+@import '_mixins.config';
+
+.border {
+  @include borderColor(null) ;
+
+  &.border-dashed {
+    border-style: dashed;
+  }
+
+  &-0 {
+    border: 0 !important;
+  }
+
+  &-top {
+    @include borderColor(top);
+
+    &-0 {
+      border-top: 0 !important;
+    }
+  }
+
+  &-right {
+    @include borderColor(right);
+
+    &-0 {
+      border-right: 0 !important;
+    }
+  }
+
+  &-bottom {
+    @include borderColor(bottom);
+
+    &-0 {
+      border-bottom: 0 !important;
+    }
+  }
+
+  &-left {
+    @include borderColor(left);
+
+    &-0 {
+      border-left: 0 !important;
+    }
+  }
+
+  //圆角
+  &-rounded {
+    border-radius: $border-radius !important;
+
+    &-top {
+      &-left {
+        border-top-left-radius: $border-radius !important;
+      }
+
+      &-right {
+        border-top-right-radius: $border-radius !important;
+      }
+    }
+
+    &-bottom {
+      &-left {
+        border-bottom-left-radius: $border-radius !important;
+      }
+
+      &-right {
+        border-bottom-left-radius: $border-radius !important;
+      }
+    }
+
+    //全圆角
+    &-circle {
+      border-radius: 100% !important;
+    }
+
+    //微圆角
+    &-oval {
+      border-radius: 10em !important;
+    }
+
+    //无圆角
+    &-0 {
+      border-radius: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+/**
+ * 模块名称：按钮，链接
+ * 创建时间：2018-5-15 14:59:57
+ * 说明：按钮，链接自定义样式
+ */
+@import '../basic/mixins.config';
+
+.btn {
+  padding: $btn-padding-top $btn-padding-right $btn-padding-bottom $btn-padding-left;
+  border-radius: $btn-border-radius;
+  text-align: center;
+  color: $btn-color;
+  line-height: 1;
+  //transition: all 0.2s;
+  border: 0;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: $btn-font-size;
+  white-space: nowrap;
+  box-sizing: border-box;
+
+  &.btn-xs {
+    font-size: $btn-font-size/1.1;
+    padding: ($btn-padding-top/2) ($btn-padding-right/2) ($btn-padding-bottom/2) ($btn-padding-left/2);
+  }
+
+  &.btn-link {
+    background-color: transparent;
+    color: $grey;
+
+    &[disabled], &[disabled="true"], &[ disabled = "disabled" ], &.disabled {
+      pointer-events: none;
+      color: $grey;
+    }
+  }
+
+  &::after {
+    border: 0;
+  }
+
+  &:active {
+    color: $btn-color-active;
+  }
+
+  &.btn-link {
+    text-decoration: none;
+    border-radius: $btn-link-border-radius;
+    padding: $btn-link-padding-top $btn-link-padding-right $btn-link-padding-bottom $btn-link-padding-left;
+    color: $btn-link-color;
+    background-color: $btn-link-bg-color;
+    display: inline-block;
+    width: auto;
+
+    &:active {
+      color: $btn-link-color-active !important;
+    }
+  }
+
+  &[disabled], &[disabled="true"], &[ disabled = "disabled" ], &.disabled {
+    pointer-events: none;
+  }
+}
+
+.btn-upload {
+  height: 0;
+  padding-top: 100%;
+  position: relative;
+
+  .van-icon {
+    font-size: units(30);
+  }
+
+  .preview,
+  .btn-upload-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .preview {
+    border-radius: units(4);
+    overflow: hidden;
+  }
+
+  .remove {
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      background-color: rgba(#000, 0.6);
+      z-index: 1;
+      content: '删除';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: units(16);
+    }
+  }
+
+  .btn-upload-btn {
+    padding: 0;
+    line-height: 1;
+    color: #ccc;
+
+    &:active {
+      background-color: #eee;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+//模块名称：标记
+//创建时间：2018-1-29 18:07:25
+//说明：徽章，标记，badge+背景颜色配置
+@import '../basic/_mixins.config';
+
+.badge {
+  font-size: units(12);
+  padding: units(4) units(5);
+  color: #fff;
+  line-height: 1;
+  border-radius: $border-radius;
+
+  &.badge-name {
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+
+    align-items: center;
+
+    > .badge-label, >.badge-content {
+      display: block;
+      padding: units(4) units(5);
+    }
+
+    > .badge-content {
+      padding-left: units(5);
+    }
+  }
+
+  + .badge {
+    margin-left: units(5);
+  }
+}

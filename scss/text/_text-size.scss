@@ -1,0 +1,32 @@
+/**
+ * 模块名称：文本字号
+ * 创建时间：2018-1-22 16:42:14
+ * 说明：文本大小
+ */
+@import '../basic/_mixins.config';
+
+@for $i from $font-size-begin through $font-size-end {
+  .font-size {
+    &-#{$font-size-default+2*$i} {
+      font-size: units($font-size-default+2*$i) !important; /*no*/
+    }
+  }
+}
+
+.line-height {
+  &-1 {
+    line-height: 1;
+  }
+
+  &-12 {
+    line-height: 1.2;
+  }
+
+  &-15 {
+    line-height: 1.5;
+  }
+
+  &-2 {
+    line-height: 2;
+  }
+}

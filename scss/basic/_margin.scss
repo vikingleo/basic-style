@@ -1,0 +1,77 @@
+/*
+    作者：vikingleo | http://www.vkleo.com | QQ:250511200
+    创建时间：2017-3-13 11:31:53
+    描述：外边距公共样式
+*/
+@import '_mixins.config';
+
+@for $i from $margin-begin through $margin-end {
+  .m {
+    &-#{$i*5} {
+      margin: pm($i) !important;
+
+      &-reverse {
+        margin: pm(-$i) !important;
+      }
+    }
+
+    &x-center {
+      margin: {
+        left: auto;
+        right: auto;
+      }
+    }
+
+    &x-#{$i*5} {
+      margin-left: pm($i) !important;
+      margin-right: pm($i) !important;
+
+      &-reverse {
+        margin-left: pm(-$i) !important;
+        margin-right: pm(-$i) !important;
+      }
+    }
+
+    &y-#{$i*5} {
+      margin-top: pm($i) !important;
+      margin-bottom: pm($i) !important;
+
+      &-reverse {
+        margin-top: pm(-$i) !important;
+        margin-bottom: pm(-$i) !important;
+      }
+    }
+
+    &t-#{$i*5} {
+      margin-top: pm($i) !important;
+
+      &-reverse {
+        margin-top: pm(-$i) !important;
+      }
+    }
+
+    &r-#{$i*5} {
+      margin-right: pm($i) !important;
+
+      &-reverse {
+        margin-right: pm(-$i) !important;
+      }
+    }
+
+    &b-#{$i*5} {
+      margin-bottom: pm($i) !important;
+
+      &-reverse {
+        margin-bottom: pm(-$i) !important;
+      }
+    }
+
+    &l-#{$i*5} {
+      margin-left: pm($i) !important;
+
+      &-reverse {
+        margin-left: pm(-$i) !important;
+      }
+    }
+  }
+}
