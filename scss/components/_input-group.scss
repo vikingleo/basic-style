@@ -30,40 +30,25 @@ $input-size-sm: units(30);
         display: none;
       }
 
-      .ju {
-        &-input {
-          &-item {
-            background-color: $grey100;
+      .ju-input {
+        &-item {
+          background-color: $grey100;
 
-            + .ju-input-item {
-              margin-top: units(10);
-            }
+          &::after {
+            display: none !important;
           }
 
-          &-label {
-            //background-color: rgba($blueGrey, .1);
-            justify-content: center;
+          + .ju-input-item {
+            margin-top: units(10);
           }
+        }
+
+        &-label {
+          justify-content: center;
         }
       }
     }
 
-    .ju-input-item {
-      + .ju-input-item {
-        position: relative;
-
-        &::after {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 0;
-          left: units(10);
-          right: units(10);
-          height: 1px;
-          background-color: $border-color;
-        }
-      }
-    }
   }
 
   &-input-item {
@@ -73,6 +58,21 @@ $input-size-sm: units(30);
     height: $input-size-default;
     border-radius: $border-radius;
     overflow: hidden;
+
+    + .ju-input-item {
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: units(10);
+        right: units(10);
+        height: 1px;
+        background-color: $border-color;
+      }
+    }
 
     .btn {
       padding: {

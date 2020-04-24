@@ -15,22 +15,37 @@
     background-color: $color !important;
 
     &.btn {
-      border-color: $color;
       @if $color!=white {
-        color: #fff;
+        color: $white;
+        border-color: $color;
       } @else {
         color: $default;
-        border: 1px solid #eee;
+        border-color: $default;
       }
       @if $init-config == web {
         &:hover {
           background-color: lighten($color, 10%) !important;
+          border-color: lighten($color, 10%) !important;
         }
       }
 
+      &[disabled], &[disabled="true"], &[ disabled = "disabled" ], &.disabled {
+        background-color: lighten($color, 30%) !important;
+        @if $color!=white {
+          color: $white;
+        } @else {
+          color: $default;
+        }
+      }
+
+      &:focus {
+        background-color: $color !important;
+
+      }
+
       &:active {
-        color: #ffffff;
-        background-color: darken($color, 10%) !important;
+        color: lighten($btn-color, 50%);
+        background-color: darken($color, 5%) !important;
       }
     }
   }
@@ -53,14 +68,14 @@
   border: {
     @if ($dir !=null) {
       #{$dir}: {
-        width: units(1);
+        width: 1px;
         style: $border-type;
-        color: $border-color;
+        color: $border-color !important;
       }
     } @else {
-      width: units(1);
+      width: 1px;
       style: $border-type;
-      color: $border-color;
+      color: $border-color !important;
     }
   }
   @each $i in $colorsName {
@@ -69,7 +84,17 @@
         border-#{$dir}-color: map-get($colorsMap, $i) !important;
       } @else {
         border-color: map-get($colorsMap, $i) !important;
+        &.btn {
+          border-color: map-get($colorsMap, $i) !important;
+          color: map-get($colorsMap, $i);
+          background-color: transparent;
+        }
       }
     }
   }
+}
+
+// padding和margin的间距
+@function pm($val) {
+  @return units($val*$padding-interval);
 }

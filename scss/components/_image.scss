@@ -20,6 +20,11 @@
     justify-content: center;
   }
 
+  img, image {
+    width: 100%;
+    height: 100%;
+  }
+
   &.default {
     width: $image-size-default;
     height: $image-size-default;

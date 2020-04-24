@@ -2,23 +2,28 @@
 //创建时间：2017-12-29 11:03:11
 //说明：全局配置
 @import '_color.config';
-//声明用微信样式红还是普通网页的初始化
+//声明用微信样式红还是普通网页的初始化,uni-app也用wechat
 $init-config: wechat;
 // UI给图是1倍图，1pt=1px，根据iphone6(@2)计算，实际像素为2倍
 // 小程序用2，普通web根据实际情况设置
 $unit: 2rpx;
+
 // 全局字体大小
-$body-font: 14*2rpx;
+$body-font: 14*$unit;
+$body-font-color: $base;
+$body-bg: #f1f4f7;
 // 字体大小初始值
 $font-size-default: 10;
 $font-size-begin: 0;
-$font-size-end: 15;
+$font-size-end: 25;
 //  border
 $border-type: solid;
-$border-color: #ddd;
+$border-color: #eee;
+$border-radius: 3 * $unit;
 // padding
 $padding-begin: 0;
 $padding-end: 10;
+$padding-interval: 5;
 // margin
 $margin-begin: $padding-begin;
 $margin-end: $padding-end;
@@ -30,13 +35,18 @@ $main-min-height: 100vh;
 $main-fixed-height: 100vh;
 $main-body-flex: 1;
 // 按钮
-$btn-padding-top: 10*$unit;
+$btn-padding-top: 14 * $unit;
 $btn-padding-bottom: $btn-padding-top;
-$btn-padding-right: $btn-padding-top*1.2;
-$btn-padding-left: $btn-padding-top*1.2;
-$btn-border-radius: 5*$unit;
-$btn-line-height: 1.2;
-$btn-color: $grey;
+$btn-padding-right: 10*$unit;
+$btn-padding-left: $btn-padding-right;
+$btn-xs-padding-top: 5 * $unit;
+$btn-xs-padding-bottom: $btn-xs-padding-top;
+$btn-xs-padding-right: 10*$unit;
+$btn-xs-padding-left: $btn-xs-padding-right;
+$btn-border-radius: $border-radius !default;
+$btn-font-size:14*$unit;
+$btn-height: 40*$unit;
+$btn-color: $default;
 $btn-color-active: darken($color: $grey, $amount: 20%);
 // 链接
 $btn-link-border-radius: 0;
@@ -48,3 +58,14 @@ $btn-link-bg-color: transparent;
 $btn-link-color: $blue;
 $btn-link-color-active: darken($blue, 20%);
 $btn-link-bg-color: transparent !important;
+
+// 头像
+$image-size-xs: 24*$unit;
+$image-size-sm: 36*$unit;
+$image-size-default: 48*$unit;
+$image-size-md: 72*$unit;
+$image-size-lg: 96*$unit;
+$image-placeholder-bg: $grey100;
+
+// 渐变角度
+$gradient-deg:135deg;

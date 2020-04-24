@@ -3,19 +3,29 @@
 .flex {
   &-col {
     flex-direction: column !important;
+    -webkit-flex-direction: column !important;
   }
+
   &-row {
     flex-direction: row !important;
+    -webkit-flex-direction: row !important;
+
   }
+
   &-wrap {
     flex-wrap: wrap !important;
+    -webkit-flex-wrap: wrap !important;
+
     &-reverse {
       flex-wrap: wrap-reverse !important;
+      -webkit-flex-wrap: wrap-reverse !important;
     }
   }
+
   @for $i from $flex-begin through $flex-end {
     &-#{$i} {
       flex: $i;
+      -webkit-flex: $i;
     }
   }
 }
@@ -24,55 +34,86 @@
   &-self {
     &-center {
       align-self: center;
+      -webkit-align-self: center;
     }
+
     &-start {
       align-self: flex-start;
+      -webkit-align-self: flex-start;
     }
+
     &-end {
       align-self: flex-end;
+      -webkit-align-self: flex-end;
     }
+
     &-baseline {
       align-self: baseline;
+      -webkit-align-self: baseline;
     }
+
     &-stretch {
       align-self: stretch;
+      -webkit-align-self: stretch;
     }
   }
+
   &-items {
     &-center {
       align-items: center !important;
+      -webkit-align-items: center !important;
     }
+
     &-start {
       align-items: flex-start !important;
+      -webkit-align-items: flex-start !important;
     }
+
     &-end {
       align-items: flex-end !important;
+      -webkit-align-items: flex-end !important;
     }
+
     &-baseline {
       align-items: baseline !important;
+      -webkit-align-items: baseline !important;
     }
+
     &-stretch {
       align-items: stretch !important;
+      -webkit-align-items: stretch !important;
     }
   }
+
   &-content {
     &-center {
       align-content: center !important;
+      -webkit-align-content: center !important;
     }
+
     &-start {
       align-content: flex-start !important;
+      -webkit-align-content: flex-start !important;
     }
+
     &-end {
       align-content: flex-end !important;
+      -webkit-align-content: flex-end !important;
     }
+
     &-stretch {
       align-content: stretch !important;
+      -webkit-align-content: stretch !important;
     }
+
     &-between {
       align-content: space-between !important;
+      -webkit-align-content: space-between !important;
     }
+
     &-around {
       align-content: space-around !important;
+      -webkit-align-content: space-around !important;
     }
   }
 }
@@ -80,17 +121,28 @@
 .justify-content {
   &-center {
     justify-content: center !important;
+    -webkit-justify-content: center !important;
   }
+
   &-start {
     justify-content: flex-start !important;
+    -webkit-justify-content: flex-start !important;
   }
+
   &-end {
     justify-content: flex-end !important;
+    -webkit-justify-content: flex-end !important;
   }
+
   &-between {
     justify-content: space-between !important;
+    -webkit-justify-content: space-between !important;
+
   }
+
   &-around {
     justify-content: space-around !important;
+    -webkit-justify-content: space-around !important;
+
   }
 }

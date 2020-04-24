@@ -17,11 +17,14 @@
   text,
   form,
   picker,
-  i {
+  i,
+  uni-view,
+  uni-page-body,
+  uni-app,
+  uni-body{
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-overflow-scrolling: touch;
-    vertical-align: middle;
   }
   page {
     color: $body-font-color;

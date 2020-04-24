@@ -10,18 +10,19 @@
   }
 
   &-inline-block {
-    display: inline-block !important;;
+    display: inline-block !important;
   }
 
   &-inline {
-    display: inline !important;;
+    display: inline !important;
   }
 
   &-none {
-    display: none !important;;
+    display: none !important;
   }
 
   &-flex {
-    display: flex !important;;
+    display: flex !important;
+    display: -webkit-flex !important;
   }
 }
