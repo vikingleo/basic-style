@@ -6,6 +6,13 @@
   "description": "app和小程序常用",
   "glyphs": [
     {
+      "icon_id": "7127687",
+      "name": "发票",
+      "font_class": "invoice",
+      "unicode": "e718",
+      "unicode_decimal": 59160
+    },
+    {
       "icon_id": "2954226",
       "name": "邀请码",
       "font_class": "invitation",
@@ -886,13 +893,6 @@
       "font_class": "reviewing",
       "unicode": "e682",
       "unicode_decimal": 59010
-    },
-    {
-      "icon_id": "1487803",
-      "name": "轮播图",
-      "font_class": "swiper-plus",
-      "unicode": "e62f",
-      "unicode_decimal": 58927
     },
     {
       "icon_id": "4769430",

@@ -4,9 +4,8 @@
 @import '_color.config';
 //声明用微信样式红还是普通网页的初始化,uni-app也用wechat
 $init-config: wechat;
-// UI给图是1倍图，1pt=1px，根据iphone6(@2)计算，实际像素为2倍
-// 小程序用2，普通web根据实际情况设置
-$unit: 2rpx;
+// 小程序以iphone6为基准对，1px=2rpx，普通web根据实际情况设置
+$unit: 2rpx !default;
 
 // 全局字体大小
 $body-font: 14*$unit;
@@ -44,7 +43,7 @@ $btn-xs-padding-bottom: $btn-xs-padding-top;
 $btn-xs-padding-right: 10*$unit;
 $btn-xs-padding-left: $btn-xs-padding-right;
 $btn-border-radius: $border-radius !default;
-$btn-font-size:14*$unit;
+$btn-font-size: 14*$unit;
 $btn-height: 40*$unit;
 $btn-color: $default;
 $btn-color-active: darken($color: $grey, $amount: 20%);
@@ -68,4 +67,4 @@ $image-size-lg: 96*$unit;
 $image-placeholder-bg: $grey100;
 
 // 渐变角度
-$gradient-deg:135deg;
+$gradient-deg: 135deg;
