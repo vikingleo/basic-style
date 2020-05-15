@@ -6,6 +6,13 @@
   "description": "app和小程序常用",
   "glyphs": [
     {
+      "icon_id": "8834061",
+      "name": "edit",
+      "font_class": "edit",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
       "icon_id": "7127687",
       "name": "发票",
       "font_class": "invoice",
