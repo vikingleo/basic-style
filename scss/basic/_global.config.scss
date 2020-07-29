@@ -5,7 +5,7 @@
 //声明用微信样式红还是普通网页的初始化,uni-app也用wechat
 $init-config: wechat;
 // 小程序以iphone6为基准对，1px=2rpx，普通web根据实际情况设置
-$unit: 2rpx !default;
+$unit: 1px !default;
 
 // 全局字体大小
 $body-font: 14*$unit;
