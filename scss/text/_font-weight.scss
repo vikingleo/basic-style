@@ -5,17 +5,57 @@
  */
 
 @import '../basic/_mixins.config';
+
 .font-weight {
+  &-lighter {
+    font-weight: lighter !important;
+  }
+
   &-normal {
     font-weight: normal !important;
   }
+
   &-bold {
     font-weight: bold !important;
   }
+
+  &-bolder {
+    font-weight: bolder !important;
+  }
+
+  &-100 {
+    font-weight: 100 !important;
+  }
+
+  &-200 {
+    font-weight: 200 !important;
+  }
+
+  &-300 {
+    font-weight: 300 !important;
+  }
+
+  &-400 {
+    font-weight: 400 !important;
+  }
+
   &-500 {
     font-weight: 500 !important;
   }
+
+  &-600 {
+    font-weight: 600 !important;
+  }
+
   &-700 {
     font-weight: 700 !important;
+  }
+
+  &-800 {
+    font-weight: 800 !important;
+  }
+
+  &-900 {
+    font-weight: 900 !important;
   }
 }

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 /**
 均分网格
  */
@@ -27,6 +29,7 @@
         bottom: -1px;
         left: -1px;
       }
+
       &:last-child {
         border-right: 1px solid #eee;
       }
@@ -34,15 +37,15 @@
   }
 
   @for $i from 1 through 10 {
-    &.avg-#{$i} {
+    &.avg-#{""+$i} {
       flex-wrap: wrap;
 
       &.avg-border {
-        margin-right: -#{$i+1}px;
+        margin-right: -#{""+$i+1}px;
       }
 
       .avg-item {
-        width: (100%/$i);
+        width: math.div(100%, $i);
       }
     }
   }

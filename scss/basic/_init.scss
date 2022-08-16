@@ -6,9 +6,6 @@
   // 微信的标签初始化
   view,
   scroll-view,
-  //input,
-  textarea
-  ,
   cover-image,
   swiper,
   swiper-item,
@@ -22,18 +19,20 @@
   uni-view,
   uni-page-body,
   uni-app,
-  uni-body{
+  uni-body,
+  input,
+  label,
+  textarea {
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-overflow-scrolling: touch;
+    //font-family: -apple-system, "PingFang SC";
+  }
+  image {
+    will-change: transform
   }
   page {
-    color: $body-font-color;
-    font-size: $body-font;
-  }
-  * {
-    box-sizing: border-box;
-    font-family: PingFang SC, serif;
+    font-size: units(14);
   }
 } @else {
   // 普通网页样式的初始化
@@ -50,7 +49,7 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-overflow-scrolling: touch;
-    font-family: PingFang SC, serif;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
   }
   img {
     max-width: 100%;

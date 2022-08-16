@@ -6,7 +6,29 @@
 @import '_mixins.config';
 
 .border {
-  @include borderColor(null) ;
+  @include borderColor(null);
+
+  &.border-simulation {
+    border: 0;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: calc(100% - 2px);
+      height: calc(100% - 2px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include borderColor(null);
+    }
+
+    &.border-rounded {
+      &::after {
+        border-radius: $border-radius;
+      }
+    }
+  }
 
   &.border-dashed {
     border-style: dashed;
@@ -52,39 +74,89 @@
   &-rounded {
     border-radius: $border-radius !important;
 
+    &.btn {
+      &::after {
+        border-radius: $border-radius !important;
+      }
+    }
+
     &-top {
       &-left {
         border-top-left-radius: $border-radius !important;
+
+        &.btn {
+          &::after {
+            border-top-left-radius: $border-radius !important;
+          }
+        }
+
       }
 
       &-right {
         border-top-right-radius: $border-radius !important;
+
+        &.btn {
+          &::after {
+            border-top-right-radius: $border-radius !important;
+          }
+        }
       }
     }
 
     &-bottom {
       &-left {
         border-bottom-left-radius: $border-radius !important;
+
+        &.btn {
+          &::after {
+            border-bottom-left-radius: $border-radius !important;
+
+          }
+        }
       }
 
       &-right {
         border-bottom-left-radius: $border-radius !important;
+
+        &.btn {
+          &::after {
+            border-bottom-left-radius: $border-radius !important;
+          }
+        }
       }
     }
 
     //全圆角
     &-circle {
       border-radius: 100% !important;
+
+      &.btn {
+        &::after {
+          border-radius: 100% !important;
+        }
+      }
     }
 
     //微圆角
     &-oval {
       border-radius: 10em !important;
+
+      &.btn {
+        &::after {
+          border-radius: 10em !important;
+        }
+      }
     }
 
     //无圆角
     &-0 {
       border-radius: 0 !important;
+
+      &.btn {
+        &::after {
+          border-radius: 0 !important;
+        }
+      }
     }
   }
 }

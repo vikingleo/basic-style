@@ -1,0 +1,75 @@
+@import "../basic/mixins.config";
+
+.ju-timeline {
+
+  &-item {
+    position: relative;
+    padding-left: units(20);
+    padding-bottom: units(20);
+
+    &::before {
+      content: '';
+      display: block;
+      width: units(1);
+      height: 100%;
+      position: absolute;
+      left: 0;
+      background-color: $grey200;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: units(10);
+      height: units(10);
+      border-radius: 100%;
+      border: 2px solid $grey;
+      background-color: #fff;
+      left: units(-7);
+      top: units(2);
+    }
+
+    &.ju-timeline-current {
+      &::after {
+        border-color: $primary;
+      }
+    }
+
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &-double-column {
+    display: flex;
+    align-items: flex-start;
+
+    .ju-timeline {
+      &-item {
+        flex-grow: 1;
+        width: 0;
+
+        &:last-child {
+          &::before {
+            display: block;
+          }
+        }
+      }
+
+      &-time {
+        margin-right: units(20);
+      }
+    }
+
+    &:last-child {
+      .ju-timeline-item {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

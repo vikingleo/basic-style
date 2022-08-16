@@ -12,7 +12,7 @@
       color: #fff;
     }
     @if $i != black {
-      &-#{$i} {
+      &-#{""+$i} {
         @include gradient($gradient-deg, lighten(map-get($colorsMap, $i), 20%), map-get($colorsMap, $i));
         &.btn {
           color: lighten(map-get($colorsMap, $i), 50%);
@@ -26,7 +26,7 @@
         }
       }
     } @else {
-      &-#{$i} {
+      &-#{""+$i} {
         @include gradient($gradient-deg, lighten(map-get($colorsMap, $i), 50%), map-get($colorsMap, $i));
         &.btn {
           color: lighten(map-get($colorsMap, $i), 50%);

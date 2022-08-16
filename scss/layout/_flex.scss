@@ -23,9 +23,13 @@
   }
 
   @for $i from $flex-begin through $flex-end {
-    &-#{$i} {
+    &-#{""+$i} {
       flex: $i;
       -webkit-flex: $i;
+      -webkit-box-flex: $i;
+      -moz-box-flex: $i;
+      -moz-flex: $i;
+      -ms-flex: $i;
     }
   }
 }

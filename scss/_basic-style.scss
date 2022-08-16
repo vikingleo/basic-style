@@ -3,12 +3,11 @@
 @import './components/btn';
 @import './components/image';
 @import './components/badge';
-@import './components/table';
-@import './components/cell';
+//@import './components/table';
 @import './components/avg';
 @import './components/step';
+//@import './components/timeline';
 //图标
-@import "icon/iconfont";
 @import "animation/spinner";
 /* 基础 */
 @import './basic/init';
@@ -36,3 +35,10 @@
 //  布局
 @import './layout/flex';
 @import './layout/float';
+
+
+.ec-icon {
+  display: inline-block;
+  font-size: unset;
+}
+

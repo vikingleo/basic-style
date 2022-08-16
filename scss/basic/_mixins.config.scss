@@ -11,29 +11,37 @@
 
 // 背景颜色
 @mixin bgColors($name, $color) {
-  &-#{$name} {
+  &-#{"" + $name} {
     background-color: $color !important;
 
     &.btn {
-      @if $color!=white {
+      @if $color !=white {
         color: $white;
         border-color: $color;
-      } @else {
-        color: $default;
+      }
+
+      @else {
         border-color: $default;
       }
-      @if $init-config == web {
+
+      @if $init-config==web {
         &:hover {
           background-color: lighten($color, 10%) !important;
           border-color: lighten($color, 10%) !important;
         }
       }
 
-      &[disabled], &[disabled="true"], &[ disabled = "disabled" ], &.disabled {
+      &[disabled],
+      &[disabled="true"],
+      &[ disabled="disabled"],
+      &.disabled {
         background-color: lighten($color, 30%) !important;
-        @if $color!=white {
+
+        @if $color !=white {
           color: $white;
-        } @else {
+        }
+
+        @else {
           color: $default;
         }
       }
@@ -53,7 +61,7 @@
 
 // 字体颜色
 @mixin textColors($name, $color) {
-  &-#{$name} {
+  &-#{""+$name} {
     color: $color !important;
   }
 }
@@ -65,27 +73,52 @@
 
 //边框颜色
 @mixin borderColor($dir) {
+
   border: {
     @if ($dir !=null) {
       #{$dir}: {
-        width: 1px;
+        width:1px;
         style: $border-type;
         color: $border-color !important;
       }
-    } @else {
+    }
+
+    @else {
       width: 1px;
       style: $border-type;
       color: $border-color !important;
     }
   }
+
+  &.btn {
+    border: 0;
+
+    &::after {
+      border: units(1) solid $border-color;
+    }
+
+    background-color: transparent;
+  }
+
   @each $i in $colorsName {
-    &.border-#{$i} {
+    &.border-#{""+$i} {
       @if $dir !=null {
         border-#{$dir}-color: map-get($colorsMap, $i) !important;
-      } @else {
+      }
+
+      @else {
         border-color: map-get($colorsMap, $i) !important;
+
         &.btn {
-          border-color: map-get($colorsMap, $i) !important;
+          border: 0 !important;
+
+          &::after {
+            border: {
+              width:units(1) !important;
+              color: map-get($colorsMap, $i) !important;
+            }
+          }
+
           color: map-get($colorsMap, $i);
           background-color: transparent;
         }

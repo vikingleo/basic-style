@@ -5,8 +5,8 @@
 */
 $red: #f44336;
 $pink: #e91e63;
-$purple: #9c27b0;
-$deepPurple: #673ab7;
+$purple: #9948E9;
+$deepPurple: #8236D3;
 $indigo: #3f51b5;
 $blue: #2196f3;
 $lightBlue: #03a9f4;
@@ -22,11 +22,12 @@ $deepOrange: #ff5722;
 $brown: #795548;
 $blueGrey: #607d8b;
 $grey50: #fafafa;
+$grey80: #808080;
 $grey100: #f1f4f7;
 $grey200: #eeeeee;
-$grey300: #e0e0e0;
-$grey400: #bdbdbd;
-$grey: #9e9e9e;
+$grey300: #bcbcbc;
+$grey400: #8f8f8f;
+$grey: #A2A2A2;
 $black: #000000;
 $white: #ffffff;
 $transparent: rgba(0, 0, 0, 0);
@@ -38,13 +39,13 @@ $faintBlack: rgba(0, 0, 0, 0.12);
 $fullWhite: rgba(255, 255, 255, 1);
 $darkWhite: rgba(255, 255, 255, 0.87);
 $lightWhite: rgba(255, 255, 255, 0.54);
-$base: #333;
+$base: #000;
 $default: #778A98;
-//$default: #778A98;
-$primary: #017be7;
-$secondary: #39baff;
+$primary: #73A8FF;
+$primary-text:#9948E9;
+$secondary: #2D6BDD;
 $prompt: #F78F09;
-$danger: #ff6155;
+$danger: #ED485B;
 $success: $green;
 $warning: #ffd700;
 $info: #ACE3FC;
@@ -69,6 +70,7 @@ deepOrange,
 brown,
 blueGrey,
 grey50,
+grey80,
 grey100,
 grey200,
 grey300,
@@ -88,6 +90,7 @@ lightWhite,
 base,
 default,
 primary,
+primary-text,
 secondary,
 prompt,
 danger,
@@ -115,6 +118,7 @@ $colorsMap: (
         brown:$brown,
         blueGrey:$blueGrey,
         grey50:$grey50,
+		grey80:$grey80,
         grey100:$grey100,
         grey200:$grey200,
         grey300:$grey300,
@@ -134,6 +138,7 @@ $colorsMap: (
         base:$base,
         default:$default,
         primary:$primary,
+        primary-text:$primary-text,
         secondary:$secondary,
         prompt:$prompt,
         danger:$danger,

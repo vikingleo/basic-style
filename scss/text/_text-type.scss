@@ -28,7 +28,12 @@
       text-decoration: line-through !important;
     }
   }
-  &-nowrap{
-    white-space: nowrap!important;
+
+  &-nowrap {
+    white-space: nowrap !important;
+  }
+
+  &-wrap {
+    white-space: normal !important;
   }
 }

@@ -42,7 +42,7 @@
     }
   }
 
-   &-width {
+  &-width {
     width: 100% !important;
 
     &-max {
@@ -95,5 +95,16 @@
 
   &-128 {
     width: units(128);
+  }
+}
+
+.height {
+  &-0 {
+    height: 0;
+  }
+}
+.width{
+  &-0{
+    width: 0;
   }
 }

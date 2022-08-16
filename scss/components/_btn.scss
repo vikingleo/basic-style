@@ -1,3 +1,4 @@
+@use "sass:math";
 /**
  * 模块名称：按钮，链接
  * 创建时间：2018-5-15 14:59:57
@@ -11,7 +12,6 @@
   text-align: center;
   color: $btn-color;
   line-height: 1;
-  //transition: all 0.2s;
   border: 0;
   display: inline-block;
   outline: none;
@@ -20,27 +20,44 @@
   white-space: nowrap;
   box-sizing: border-box;
 
+  &.btn-fix-height {
+    height: $fix-height;
+  }
+
   &.btn-xs {
-    font-size: $btn-font-size/1.1;
-    padding: ($btn-padding-top/2) ($btn-padding-right/2) ($btn-padding-bottom/2) ($btn-padding-left/2);
+    font-size: math.div($btn-font-size, 1.1);
+    padding: $btn-xs-padding-top $btn-xs-padding-right $btn-xs-padding-bottom $btn-xs-padding-left;
+  }
+
+  &.btn-sm {
+    font-size: math.div($btn-font-size, .8);
+    padding: $btn-sm-padding-top $btn-sm-padding-right $btn-sm-padding-bottom $btn-sm-padding-left;
   }
 
   &.btn-link {
     background-color: transparent;
     color: $grey;
 
-    &[disabled], &[disabled="true"], &[ disabled = "disabled" ], &.disabled {
+    &[disabled],
+    &[disabled="true"],
+    &[ disabled="disabled"],
+    &.disabled {
       pointer-events: none;
       color: $grey;
     }
   }
 
   &::after {
-    border: 0;
+    display: block;
+    border-radius: $btn-border-radius;
+    border: {
+      width: 0
+    }
   }
 
   &:active {
     color: $btn-color-active;
+    opacity: .8;
   }
 
   &.btn-link {
@@ -57,8 +74,19 @@
     }
   }
 
-  &[disabled], &[disabled="true"], &[ disabled = "disabled" ], &.disabled {
+  &[disabled],
+  &[disabled="true"],
+  &[ disabled="disabled"],
+  &.disabled {
     pointer-events: none;
+  }
+}
+
+button {
+  &.btn {
+    padding: 0;
+    height: $btn-height;
+    line-height: $btn-height;
   }
 }
 

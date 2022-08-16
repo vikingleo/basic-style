@@ -22,6 +22,10 @@
   }
 
   &-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: -moz-box !important;
+    display: -moz-flex !important;
     display: flex !important;
     display: -webkit-flex !important;
   }
